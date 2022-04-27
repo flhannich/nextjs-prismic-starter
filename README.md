@@ -1,5 +1,11 @@
 # NextJs Prismic Starter
 
+## Live
+https://nextjs-prismic-starter.netlify.app/en-us
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fbf821b9-fa37-462a-87d6-be3d22c1a715/deploy-status)](https://app.netlify.com/sites/nextjs-prismic-starter/deploys)
+
+
 ## Features
 - Multilanguage
 - Contact Form (Nodemailer) 
@@ -88,5 +94,5 @@ npm run slicemachine
 - So far, you have to push all costum types by hand to prismic
 
 ## Roadmap
-- Make Contact Form editable in Prismic
+- Contact Form editable in Prismic
 - Move UIContents to Prismic
