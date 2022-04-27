@@ -3,7 +3,7 @@ export const accessToken = process.env.PRISMIC_ACCESS_TOKEN
 
 
 export const linkResolver = (doc) => {
-  if(doc.lang === 'de-de') {
+  if(doc.lang === 'en-us') {
     if (doc.type === 'post') {
       return `/posts/${doc.uid}`
     }

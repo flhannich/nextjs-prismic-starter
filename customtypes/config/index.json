@@ -1,6 +1,6 @@
 {
-  "id": "contacts",
-  "label": "Contacts",
+  "id": "config",
+  "label": "Config",
   "repeatable": false,
   "status": true,
   "json": {

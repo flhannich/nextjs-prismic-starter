@@ -1,0 +1,8 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--spacer-6);
+    .title {
+        padding-bottom: var(--spacer-4);
+    }
+}

@@ -55,6 +55,11 @@ SMTP_EMAIL_ADRESS=<contactform@mail.com>
 SMTP_RECIPIENT=<recipient@mail.com>
 ```
 
+Update API Endpoint in sm.json
+```bash
+https://your-repo.prismic.io/api/v2,
+```
+
 Push envoirment variables to netlify
 ```bash
 netlify env:import .env.local

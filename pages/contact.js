@@ -7,12 +7,12 @@ import { useContext, useEffect } from 'react';
 
 const resolver = ({ sliceName }) => Slices[sliceName];
 
-export default function Contact({doc, menu, contacts, lang, preview}) {
+export default function Contact({doc, menu, config, lang, preview}) {
 
-  const {  contactsRef } = useContext(AppContext);
+  const {  configRef } = useContext(AppContext);
 
   useEffect(() => {
-    contactsRef.current = contacts;
+    configRef.current = config;
   },[]);
   
   return (
@@ -47,13 +47,13 @@ export async function getStaticProps({
 
   const doc = await client.getSingle('contact', ref ? { ref, lang: locale } : { lang: locale }) || {};
   const menu = await client.getSingle('menu', ref ? { ref, lang: locale } : { lang: locale }) || {};
-  const contacts = await client.getSingle('contacts', ref ? { ref, lang: locale } : { lang: locale }) || {};
+  const config = await client.getSingle('config', ref ? { ref, lang: locale } : { lang: locale }) || {};
 
   return {
     props: {
       doc,
       menu,
-      contacts,
+      config,
       preview: {
         isActive: isPreview,
         activeRef: ref,

@@ -7,7 +7,7 @@ export const AppProvider = ({ children }) => {
 
   const [darkMode, setDarkMode] = useState(false);
 
-  const contactsRef = useRef(null);
+  const configRef = useRef(null);
   const fontsRef = useRef(null);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export const AppProvider = ({ children }) => {
         darkMode,
         setDarkMode,
         uiContents,
-        contactsRef,
+        configRef,
         fontsRef,
       }}
     >

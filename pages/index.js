@@ -5,12 +5,12 @@ import { createClient, manageLocal } from "prismicio";
 import { Layout, PostList, PageTitle} from "@components/index";
 import SliceZone from "next-slicezone";
 
-export default function Home({doc, menu, contacts, lang, preview, posts}) {
+export default function Home({doc, menu, config, lang, preview, posts}) {
 
-  const { contactsRef } = useContext(AppContext);  
+  const { configRef } = useContext(AppContext);  
     
   useEffect(() => {
-    contactsRef.current = contacts;
+    configRef.current = config;
   },[]);
 
   return (
@@ -48,7 +48,7 @@ export async function getStaticProps({
 
   const doc = await client.getSingle('home', ref ? { ref, lang: locale } : { lang: locale }) || {};
   const menu = await client.getSingle('menu', ref ? { ref, lang: locale } : { lang: locale }) || {};
-  const contacts = await client.getSingle('contacts', ref ? { ref, lang: locale } : { lang: locale }) || {};
+  const config = await client.getSingle('config', ref ? { ref, lang: locale } : { lang: locale }) || {};
 
   const posts = await client.getAllByType("post", {
     fetch : ['post.title', 'post.image'],
@@ -63,7 +63,7 @@ export async function getStaticProps({
     props: {
       doc,
       menu,
-      contacts,
+      config,
       posts,
       preview: {
         isActive: isPreview,

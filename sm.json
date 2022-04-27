@@ -1,5 +1,5 @@
 {
-  "apiEndpoint": "https://florian-hannich.prismic.io/api/v2",
+  "apiEndpoint": "https://nextjs-prismic-starter-example.prismic.io/api/v2",
   "libraries": [
     "@/slices"
   ],

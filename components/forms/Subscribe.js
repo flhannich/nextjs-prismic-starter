@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import styles from './Subscribe.module.scss';
 import axios from "axios";
+import { RichText } from "prismic-reactjs";
 import { useRouter } from 'next/router'
 import { AppContext } from "context/AppContext";
 import { validateEmail, validateLegal } from '@utils/inputValidation';
@@ -12,7 +13,7 @@ import {
     Submit } from '@components/index';
 
 
-const Contact = () => {
+const Subscribe = ({slice}) => {
 
     const lang = useRouter().locale;
     const { uiContents } = useContext(AppContext);
@@ -102,54 +103,62 @@ const Contact = () => {
 
 
     return (
+
         <section className={styles.container}>
-        <form>   
+            
+            { slice && slice.primary.title &&
+                <div className={styles.title}>
+                    <h3>{RichText.asText(slice.primary.title)}</h3>
+                </div>
+            }
+            
+            <form>   
 
-            <Input 
-                handler={handleChange}
-                value={data.email}
-                label={uiContents.inputEmail.label[lang]}
-                name={`email`}
-                type={`email`}
-                validation={validateEmail}
-                placeholder={uiContents.inputEmail.placeholder[lang]}
-                hasFormValidationError={data.formValidationError && !data.validation.email}
-                errorMessage={
-                    data.email === '' 
-                    ?   uiContents.inputEmail.error[lang].missing
-                    :   uiContents.inputEmail.error[lang].failed
-                }
-            />
+                <Input 
+                    handler={handleChange}
+                    value={data.email}
+                    label={uiContents.inputEmail.label[lang]}
+                    name={`email`}
+                    type={`email`}
+                    validation={validateEmail}
+                    placeholder={uiContents.inputEmail.placeholder[lang]}
+                    hasFormValidationError={data.formValidationError && !data.validation.email}
+                    errorMessage={
+                        data.email === '' 
+                        ?   uiContents.inputEmail.error[lang].missing
+                        :   uiContents.inputEmail.error[lang].failed
+                    }
+                />
 
-            <Checkbox
-                handler={handleChange}
-                checked={data.legal}
-                type={`switch`}
-                name={`legal`}
-                value={`accepted`}
-                validation={validateLegal}
-                label={uiContents.inputLegal.label[lang]}
-                hasFormValidationError={data.formValidationError && !data.validation.legal}
-                errorMessage={uiContents.inputLegal.error[lang].failed}
-            />
+                <Checkbox
+                    handler={handleChange}
+                    checked={data.legal}
+                    type={`switch`}
+                    name={`legal`}
+                    value={`accepted`}
+                    validation={validateLegal}
+                    label={uiContents.inputLegal.label[lang]}
+                    hasFormValidationError={data.formValidationError && !data.validation.legal}
+                    errorMessage={uiContents.inputLegal.error[lang].failed}
+                />
 
 
-            <Submit 
-                handler={formSubmit}
-                sending={data.sending}
-                text={uiContents.formSubmit.subscribe[lang]}
-            />
+                <Submit 
+                    handler={formSubmit}
+                    sending={data.sending}
+                    text={uiContents.formSubmit.subscribe[lang]}
+                />
 
-        </form>
+            </form>
 
-        {data.success &&
-            <Modal>
-                Thank you
-            </Modal>
-        }
+            {data.success &&
+                <Modal>
+                    Thank you
+                </Modal>
+            }
 
         </section>
     )
 }
 
-export default Contact;
+export default Subscribe;

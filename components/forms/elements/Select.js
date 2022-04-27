@@ -7,7 +7,6 @@ const Input = (props) => {
     const handleChange = e => {
         let valid = true;
         if(props.validation) {
-            console.log(e.target.value);
             valid = props.validation(e.target.value)
             setValidationState(valid)
         }

@@ -5,12 +5,12 @@ import SliceZone from "next-slicezone";
 import { AppContext } from 'context/AppContext';
 import { useContext, useEffect } from 'react';
 
-const Post = ({ doc, menu, contacts, lang, preview }) => {
+const Post = ({ doc, menu, config, lang, preview }) => {
    
-  const { contactsRef } = useContext(AppContext);
+  const { configRef } = useContext(AppContext);
 
   useEffect(() => {
-    contactsRef.current = contacts;
+    configRef.current = config;
   },[]);
   
     return (
@@ -48,13 +48,13 @@ export async function getStaticProps({
 
   const doc = await client.getByUID('legal', params.uid, ref ? { ref, lang: locale } : { lang: locale }) || {};
   const menu = await client.getSingle('menu', ref ? { ref, lang: locale } : { lang: locale }) || {};
-  const contacts = await client.getSingle('contacts', ref ? { ref, lang: locale } : { lang: locale }) || {};
+  const config = await client.getSingle('config', ref ? { ref, lang: locale } : { lang: locale }) || {};
 
   return {
     props: {
       doc,
       menu,
-      contacts,
+      config,
       preview: {
         isActive: isPreview,
         activeRef: ref,

@@ -5,8 +5,8 @@ export { default as Header } from './Header';
 export { default as Footer } from './Footer';
 export { default as Icons } from './Icons';
 
-export { default as Contact } from './forms/contact';
-export { default as Subscribe } from './forms/subscribe';
+export { default as Contact } from './forms/Contact';
+export { default as Subscribe } from './forms/Subscribe';
 
 export { default as Input } from './forms/elements/Input';
 export { default as Textarea } from './forms/elements/Textarea';

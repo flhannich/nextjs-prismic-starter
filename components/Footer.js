@@ -8,7 +8,7 @@ import { AppContext } from 'context/AppContext';
 
 const Footer = ({ menu, altLangs, lang }) => {
 
-    const { contactsRef } = useContext(AppContext);
+    const { configRef } = useContext(AppContext);
 
     const scrollToTop = () => {
         window.scrollTo({top: 0, behavior: 'smooth'});
@@ -20,18 +20,18 @@ const Footer = ({ menu, altLangs, lang }) => {
 
             <div className={styles.top}>
 
-                {contactsRef.current && 
+                {configRef.current && 
                     <nav className={styles.contact}>
                         <ul>
                             <li>
-                                <a href={`tel:+49 ${contactsRef.current.data.phone.substring(1)}`}>{contactsRef.current.data.phone}</a>
+                                <a href={`tel:+49 ${configRef.current.data.phone.substring(1)}`}>{configRef.current.data.phone}</a>
                             </li>
                             <li>
-                                <a href={`mailto:${contactsRef.current.data.mail}`}>{contactsRef.current.data.mail}</a>
+                                <a href={`mailto:${configRef.current.data.mail}`}>{configRef.current.data.mail}</a>
                             </li>
                         </ul>
                         <ul>
-                            {contactsRef.current.data?.social.map((item, index) => (
+                            {configRef.current.data?.social.map((item, index) => (
                                 <li key={index}>
                                     <a href={item.link.url} rel="noreferrer nofollow">{item.provider}</a>
                                 </li>
@@ -62,7 +62,7 @@ const Footer = ({ menu, altLangs, lang }) => {
                 <nav className={styles.legal}>
                     <ul>
                         <li>
-                            {contactsRef.current && <span>&copy; 2022 {contactsRef.current.data.sitename}</span>}
+                            {configRef.current && <span>&copy; 2022 {configRef.current.data.sitename}</span>}
                         </li>
                         {menu.data.legal.map((item, index) => (
                             <li key={index}>

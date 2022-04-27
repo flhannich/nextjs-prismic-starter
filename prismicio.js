@@ -16,7 +16,7 @@ export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint);
  * @type {prismicH.LinkResolverFunction}
  */
  export const linkResolver = (doc) => {
-  if(doc.lang === 'de-de') {
+  if(doc.lang === 'en-us') {
     if (doc.type === 'home') {
       return `/`
     }
