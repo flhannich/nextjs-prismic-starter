@@ -1,0 +1,22 @@
+{
+  "id": "463ab8b1-d7f1-47f5-815d-4e8d56481ec6",
+  "uid": "nobis-laborum-et",
+  "type": "case",
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Mesh global channels",
+        "spans": []
+      }
+    ],
+    "protected": true,
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Eu labore aliqua commodo magna fugiat ea. Aute ut nulla adipisicing tempor elit eiusmod sunt dolore ullamco fugiat sit.",
+        "spans": []
+      }
+    ]
+  }
+}

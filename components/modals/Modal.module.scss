@@ -1,0 +1,27 @@
+.container {
+    position: fixed;
+    max-width: 600px;
+    width: calc(100% - var(--spacer-6));
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--accent-color);
+    padding: var(--spacer-5);
+    z-index: 1;
+    &.isVisible {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    &.isHidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .close {
+        position: absolute;
+        top: var(--spacer-3);
+        right: var(--spacer-3);
+        z-index: 1;
+    }
+}

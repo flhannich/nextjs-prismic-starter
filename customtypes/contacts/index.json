@@ -1,0 +1,83 @@
+{
+  "id": "contacts",
+  "label": "Contacts",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "sitename": {
+        "type": "Text",
+        "config": {
+          "label": "Sitename",
+          "placeholder": ""
+        }
+      },
+      "owner": {
+        "type": "Text",
+        "config": {
+          "label": "Owner",
+          "placeholder": ""
+        }
+      },
+      "mail": {
+        "config": {
+          "label": "Mail",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phone": {
+        "config": {
+          "label": "phone",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "street": {
+        "config": {
+          "label": "Street",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "postal_code": {
+        "config": {
+          "label": "Postal Code",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "city": {
+        "config": {
+          "label": "City",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "social": {
+        "config": {
+          "label": "Social",
+          "fields": {
+            "provider": {
+              "config": {
+                "label": "Provider",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "link": {
+              "config": {
+                "label": "link",
+                "placeholder": "",
+                "allowTargetBlank": false,
+                "select": null
+              },
+              "type": "Link"
+            }
+          }
+        },
+        "type": "Group"
+      }
+    }
+  }
+}

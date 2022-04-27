@@ -1,0 +1,32 @@
+.container {
+    position: absolute;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--accent-color);
+    padding: var(--spacer-4) var(--spacer-4);
+    z-index: 1;
+    &.top-left {
+        bottom: var(--spacer-6);
+        right: 0;
+    }
+    &.top-right {
+        bottom: var(--spacer-6);
+        left: 0;
+    }
+    &.bottom-left {
+        top: var(--spacer-6);
+        right: 0;
+    }
+    &.bottom-right {
+        top: var(--spacer-6);
+        left: 0;
+    }
+    &.isVisible {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    &.isHidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}

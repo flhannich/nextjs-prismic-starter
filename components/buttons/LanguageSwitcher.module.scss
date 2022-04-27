@@ -1,0 +1,24 @@
+.container {
+    position: relative;
+    display: inline-block;
+    .current {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .list {
+        width: 200px;
+        a:link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            line-height: 32px;
+            border-radius: var(--border-radius);
+            padding: 0 var(--spacer-2);
+            &.isSelected {
+                background-color: var(--background-color--highlight);
+            }
+        }
+    }
+
+}

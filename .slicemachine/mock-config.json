@@ -1,0 +1,251 @@
+{
+  "slices": {
+    "ContactForm": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "contact_form",
+        "items": [],
+        "primary": {
+          "title": [
+            {
+              "type": "heading1",
+              "text": "Disintermediate cutting-edge architectures",
+              "spans": []
+            }
+          ],
+          "description": [
+            {
+              "type": "paragraph",
+              "text": "Ad occaecat officia anim cillum incididunt sint ut consequat cupidatat. Do officia deserunt commodo dolore sint sunt ullamco duis minim officia reprehenderit consequat ullamco.",
+              "spans": []
+            }
+          ]
+        }
+      }
+    ],
+    "Newsletter": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "newsletter",
+        "items": [],
+        "primary": {
+          "title": [
+            {
+              "type": "heading1",
+              "text": "Whiteboard end-to-end relationships",
+              "spans": []
+            }
+          ],
+          "description": [
+            {
+              "type": "paragraph",
+              "text": "Sunt deserunt ad sunt nisi.",
+              "spans": []
+            }
+          ]
+        }
+      }
+    ],
+    "FontTitle": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "font_title",
+        "items": [],
+        "primary": {
+          "title": [
+            {
+              "type": "heading1",
+              "text": "Unleash dynamic systems",
+              "spans": []
+            }
+          ]
+        }
+      }
+    ],
+    "FontInfo": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "font_info",
+        "items": [],
+        "primary": {
+          "title": [
+            {
+              "type": "heading1",
+              "text": "Target wireless niches",
+              "spans": []
+            }
+          ]
+        }
+      }
+    ],
+    "FontStyles": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "font_styles",
+        "items": [],
+        "primary": {}
+      }
+    ],
+    "FontTester": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "font_tester",
+        "items": [],
+        "primary": {}
+      }
+    ],
+    "FontGlyphs": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "font_glyphs",
+        "items": [],
+        "primary": {}
+      }
+    ],
+    "FontPreview": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "font_preview",
+        "items": [],
+        "primary": {}
+      }
+    ],
+    "FontGallery": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "font_gallery",
+        "items": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 1680,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=1680&h=500&fit=crop"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 1680,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1680&h=500&fit=crop"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 1680,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=1680&h=500&fit=crop"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 1680,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=1680&h=500&fit=crop"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 1680,
+                "height": 500
+              },
+              "alt": "Placeholder image",
+              "copyright": null,
+              "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=1680&h=500&fit=crop"
+            }
+          }
+        ],
+        "primary": {}
+      }
+    ],
+    "ArchiveEntry": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "_cts": {
+    "contact": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    },
+    "home": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    },
+    "post": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    },
+    "contact-details": {
+      "social-provider": {}
+    },
+    "menu": {
+      "main": {}
+    },
+    "product": {
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "protected": {},
+    "case": {
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "contacts": {},
+    "legal": {},
+    "archive": {}
+  }
+}

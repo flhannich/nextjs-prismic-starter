@@ -1,0 +1,53 @@
+{
+  "id": "cda24858-c6a1-4b58-ab40-6d479fd55470",
+  "uid": "nesciunt-voluptatem-culpa",
+  "type": "menu",
+  "data": {
+    "main": [
+      {
+        "label": "integrate plug-and-play web-readiness",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "label": "orchestrate turn-key paradigms",
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "label": "unleash proactive e-business",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      }
+    ],
+    "legal": [
+      {
+        "label": "productize dot-com content",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "label": "deploy scalable eyeballs",
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "label": "repurpose B2B relationships",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      }
+    ]
+  }
+}

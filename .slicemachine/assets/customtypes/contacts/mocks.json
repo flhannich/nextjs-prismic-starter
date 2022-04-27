@@ -1,0 +1,51 @@
+{
+  "id": "afb740fb-4560-4bb7-8ea1-c14d9277f697",
+  "uid": "recusandae-qui-ad",
+  "type": "contacts",
+  "data": {
+    "sitename": "empower revolutionary bandwidth",
+    "owner": "transform back-end partnerships",
+    "mail": "morph 24/365 methodologies",
+    "phone": "cultivate dynamic e-business",
+    "street": "matrix global infrastructures",
+    "postal_code": "implement impactful vortals",
+    "city": "engage synergistic web-readiness",
+    "social": [
+      {
+        "provider": "engineer enterprise bandwidth",
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "provider": "generate value-added interfaces",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "provider": "facilitate best-of-breed partnerships",
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "provider": "grow real-time systems",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "provider": "enable mission-critical applications",
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      }
+    ]
+  }
+}

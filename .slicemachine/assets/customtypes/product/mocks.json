@@ -1,0 +1,48 @@
+{
+  "id": "2ed809fa-d6da-4154-b7f7-e73602757d79",
+  "uid": "repudiandae-placeat-id",
+  "type": "product",
+  "data": {
+    "url": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Benchmark real-time solutions",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Commodo commodo reprehenderit voluptate duis incididunt incididunt ad exercitation nisi consequat amet.",
+        "spans": []
+      }
+    ],
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
+    },
+    "fonts": [
+      {
+        "font": {
+          "link_type": "media",
+          "url": "https://source.unsplash.com/daily"
+        }
+      },
+      {
+        "font": {
+          "link_type": "media",
+          "url": "https://source.unsplash.com/daily"
+        }
+      }
+    ]
+  }
+}

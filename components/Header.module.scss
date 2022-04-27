@@ -1,0 +1,35 @@
+.container {
+    padding: var(--spacer-3) var(--padding--site);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+        ul {
+            display: flex;
+            margin: 0 calc(var(--spacer-3) * -1);
+            li {
+                a {
+                    padding: 0 var(--spacer-3);
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        span {
+            line-height: 1;
+            font-size: var(--type-scale-1);
+            padding-right: var(--spacer-2)
+        }
+        button {
+            svg {
+                path {
+                    stroke: var(--type-color);
+                }
+            }
+        }
+    }
+
+}

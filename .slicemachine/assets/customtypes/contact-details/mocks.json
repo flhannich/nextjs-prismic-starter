@@ -1,0 +1,42 @@
+{
+  "id": "124e5695-4dc3-4573-977e-c3a477076ac7",
+  "uid": "id-quia-illum",
+  "type": "contact-details",
+  "data": {
+    "mail": "matrix plug-and-play e-commerce",
+    "phone": "aggregate turn-key communities",
+    "street": "exploit one-to-one mindshare",
+    "postal_code": "incubate world-class niches",
+    "city": "synergize proactive blockchains",
+    "social-provider": [
+      {
+        "provider": "orchestrate viral ROI",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "provider": "empower turn-key eyeballs",
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "provider": "e-enable ubiquitous infomediaries",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "provider": "facilitate wireless partnerships",
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ]
+  }
+}

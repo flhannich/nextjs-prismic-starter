@@ -1,0 +1,115 @@
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--background-color);
+    &.is-scroll-disabled {
+      overflow: hidden;
+      height: 100vh;
+    }
+    @media(max-width: 768px) {
+      overflow-x: hidden;
+    }
+    &:not(.user-is-tabbing) a:focus,
+    &:not(.user-is-tabbing) [tabindex],
+    &:not(.user-is-tabbing) button:focus,
+    &:not(.user-is-tabbing) input:focus,
+    &:not(.user-is-tabbing) select:focus,
+    &:not(.user-is-tabbing) textarea:focus {
+      outline: none;
+    }
+  }
+  
+
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul, figure, blockquote, button, input, textarea, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  picture source, 
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  header, main, article, aside, footer, section, div {
+    box-sizing: border-box;
+  }
+
+  a {
+    color: inherit;
+    display: inline-block;
+    &:link {
+      text-decoration: none;
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+
+  cite,
+  address {
+    font-style: normal;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  
+  button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+
+  input {
+    border: none;
+    background-color: inherit;
+  }
+
+  textarea {
+    border: none;
+    background-color: inherit;
+    resize: none;
+  }
+  
+  // Hack for Links
+  a > * {
+    pointer-events: none;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  svg {
+    vector-effect: non-scaling-stroke;
+    shape-rendering: geometricPrecision;
+    & > * { 
+      transform-box: fill-box;
+    }
+  }
+
+  ::placeholder {
+    color: inherit;
+  }
+
+  input {
+    accent-color: var(--accent-color);
+  }
+
+  [contenteditable] {
+    outline: 0px solid transparent;
+  }

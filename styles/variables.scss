@@ -1,0 +1,123 @@
+$spacer-desktop: 4px, 8px, 16px, 24px, 40px, 64px, 96px, 128px, 168px, 231px, 296px, 392px;
+$spacer-mobile: 4px, 8px, 16px, 24px, 32px, 56px, 64px, 96px, 112px, 144px, 168px, 232px;
+
+$base-type-size: 1rem;
+$base-scale-ratio: 1.125;
+$base-line-height: 1.5;
+
+:root {
+
+    --border-radius: 4px;
+    --border-radius--large: 12px;
+
+    --grid-gap: var(--spacer-4);
+    --padding--site: var(--spacer-3);
+
+    --bezier : cubic-bezier(.32,.37,.05,1.01);    
+
+    @media(min-width: 768px) {
+        --padding--site: var(--spacer-7);
+    }
+
+    @each $spacer in $spacer-mobile {
+        $i: index($spacer-mobile, $spacer);
+        --spacer-#{$i}: #{$spacer};
+    }    
+
+    --type-scale--min: 13px;
+    --type-scale-0: calc(#{$base-type-size} / #{$base-scale-ratio});
+    --type-scale-1: #{$base-type-size};
+    --type-scale-2: calc(var(--type-scale-1) * #{$base-scale-ratio});
+    --type-scale-3: calc(var(--type-scale-2) * #{$base-scale-ratio});
+    --type-scale-4: calc(var(--type-scale-3) * #{$base-scale-ratio});
+    --type-scale-5: calc(var(--type-scale-4) * #{$base-scale-ratio});
+    --type-scale-6: calc(var(--type-scale-5) * #{$base-scale-ratio});
+    --type-scale-7: calc(var(--type-scale-6) * #{$base-scale-ratio});
+    --type-scale-8: calc(var(--type-scale-7) * #{$base-scale-ratio});
+    --type-scale-9: calc(var(--type-scale-8) * #{$base-scale-ratio});
+    --type-scale-10: calc(var(--type-scale-9) * #{$base-scale-ratio});
+    --type-scale-11: calc(var(--type-scale-10) * #{$base-scale-ratio});
+    --type-scale-12: calc(var(--type-scale-11) * #{$base-scale-ratio});
+    --type-scale-13: calc(var(--type-scale-12) * #{$base-scale-ratio});
+    --type-scale-14: calc(var(--type-scale-13) * #{$base-scale-ratio});
+    --type-scale-15: calc(var(--type-scale-14) * #{$base-scale-ratio});
+    --type-scale-16: calc(var(--type-scale-15) * #{$base-scale-ratio});
+    --type-scale-17: calc(var(--type-scale-16) * #{$base-scale-ratio});
+    --type-scale-18: calc(var(--type-scale-17) * #{$base-scale-ratio});
+    --type-scale-19: calc(var(--type-scale-18) * #{$base-scale-ratio});
+    --type-scale-20: calc(var(--type-scale-19) * #{$base-scale-ratio});
+    --type-scale-21: calc(var(--type-scale-20) * #{$base-scale-ratio});
+    --type-scale-22: calc(var(--type-scale-21) * #{$base-scale-ratio});
+}
+
+
+:root {
+    [data-darkmode=false] {
+        --type-color: rgb(20, 20, 20);
+        --type-color--light: rgb(128, 128, 128);
+        --type-color--invert: rgb(230, 230, 230);
+        --type-color--error: rgb(235, 49, 49);
+        --type-color--success: rgb(37, 170, 37);
+        --type-color--brand: rgb(61, 108, 236);
+    
+        --background-color: rgb(235, 235, 235);
+        --background-color--invert: rgb(30, 30, 30);
+
+        --background-color--highlight: rgb(210, 210, 210);
+        --background-color--highlight--invert: rgb(50, 50, 50);
+    
+        --background-color--error: rgb(247, 226, 226);
+        --background-color--success: rgb(206, 241, 206);
+        --background-color--brand: rgb(61, 108, 236);
+    
+        --background-color--button: rgb(20, 20, 20);
+        --background-color--button--invert: rgb(235, 235, 235);
+    
+        --border-color: rgb(210, 210, 210);
+        --border-color--dark: rgb(50, 50, 50);
+    
+        --border-color--error: rgb(235, 49, 49);
+        --border-color--success: rgb(37, 170, 37);
+        --border-color--brand: rgb(61, 108, 236);
+    
+        --accent-color: rgb(50, 50, 50);
+        --accent-color--light: rgb(210, 210, 210);
+    } 
+}
+
+
+
+
+:root {
+    [data-darkmode=true] {
+        --type-color: rgb(230, 230, 230);
+        --type-color--light: rgb(128, 128, 128);
+        --type-color--invert: rgb(20, 20, 20);
+        --type-color--error: rgb(235, 49, 49);
+        --type-color--success: rgb(37, 170, 37);
+        --type-color--brand: rgb(61, 108, 236);
+    
+        --background-color: rgb(30, 30, 30);
+        --background-color--invert: rgb(235, 235, 235);
+    
+        --background-color--highlight: rgb(50, 50, 50);
+        --background-color--highlight--invert: rgb(210, 210, 210);
+
+        --background-color--error: rgb(247, 226, 226);
+        --background-color--success: rgb(206, 241, 206);
+        --background-color--brand: rgb(61, 108, 236);
+    
+        --background-color--button: rgb(235, 235, 235);
+        --background-color--button--invert: rgb(20, 20, 20);
+    
+        --border-color: rgb(50, 50, 50);
+        --border-color--dark: rgb(210, 210, 210);
+    
+        --border-color--error: rgb(235, 49, 49);
+        --border-color--success: rgb(37, 170, 37);
+        --border-color--brand: rgb(61, 108, 236);
+    
+        --accent-color: rgb(210, 210, 210);
+        --accent-color--light: rgb(50, 50, 50);
+    }
+}

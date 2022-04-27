@@ -1,0 +1,33 @@
+{
+  "id": "contact",
+  "label": "Kontakt",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "config": {
+          "label": "Title",
+          "placeholder": "Title",
+          "allowTargetBlank": true,
+          "multi": "heading1"
+        },
+        "type": "StructuredText"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "contact_form": {
+              "type": "SharedSlice"
+            },
+            "newsletter": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

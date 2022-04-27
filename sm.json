@@ -1,0 +1,9 @@
+{
+  "apiEndpoint": "https://florian-hannich.prismic.io/api/v2",
+  "libraries": [
+    "@/slices"
+  ],
+  "_latest": "0.3.0",
+  "localSliceSimulatorURL": "http://localhost:3000/slice-simulator",
+  "framework": "previousNext"
+}

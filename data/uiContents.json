@@ -1,0 +1,158 @@
+{
+    "formSubmit": {
+        "case": {
+            "de-de": "Abschicken",
+            "en-us": "Send"
+        },
+        "contact": {
+            "de-de": "Abschicken",
+            "en-us": "Send"
+        },
+        "subscribe": {
+            "de-de": "Anmelden",
+            "en-us": "Subscribe"
+        }
+    },
+    "inputRange": {
+        "label": {
+            "de-de": "Label",
+            "en-us": "Label"
+        },
+        "error": {
+            "de-de": {
+                "missing": "Bitte wähle eine Optio",
+                "failed": "Du hast etwas falsches gwählt"
+            },
+            "en-us": {
+                "missing": "Please choose an option",
+                "failed": "You chose something wrong"
+            }
+        }
+    },
+    "inputSelect": {
+        "label": {
+            "de-de": "Label",
+            "en-us": "Label."
+        },
+        "default": {
+            "de-de": "Bitte wählen...",
+            "en-us": "Please choose..."
+        },
+        "error": {
+            "de-de": {
+                "missing": "Bitte wähle eine Option"
+            },
+            "en-us": {
+                "missing": "Please choose an option"
+            }
+        }
+    },
+    "inputEmail": {
+        "label": {
+            "de-de": "Email",
+            "en-us": "Email"
+        },
+        "placeholder": {
+            "de-de": "Deine Email",
+            "en-us": "Your Email"
+        },
+        "error": {
+            "de-de": {
+                "missing": "Deine Email fehlt",
+                "failed": "Etwas stimmt mit deiner Email nicht"
+            },
+            "en-us": {
+                "missing": "Email is Missing",
+                "failed": "Something is wrong. Check your Email"
+            }
+        }
+    },
+    "inputLegal": {
+        "label": {
+            "de-de": "Hiermit bestätigst du unsere Datenschutzerklärung",
+            "en-us": "I agree that I have read and accepted the Privacy Policy"
+        },
+        "error": {
+            "de-de": {
+                "failed": "Du musst unsere Datenschutzbestimmungen akzeptieren"
+            },
+            "en-us": {
+                "failed": "You have to accept our legals"
+            }
+        }
+    },
+    "inputPassword": {
+        "label": {
+            "de-de": "Passwort",
+            "en-us": "Password"
+        },
+        "error": {
+            "de-de": {
+                "failed": "Passwort fehler"
+            },
+            "en-us": {
+                "failed": "Password failed"
+            }
+        }
+    },
+    "inputMessage": {
+        "label": {
+            "de-de": "Nachricht",
+            "en-us": "Message"
+        },
+        "placeholder": {
+            "de-de": "Sag hallo",
+            "en-us": "Say hi"
+        },
+        "error": {
+            "de-de": {
+                "missing": "Deine Nachricht fehlt",
+                "failed": "Deine Nachricht ist zu kurz"
+            },
+            "en-us": {
+                "missing": "Message is Missing",
+                "failed": "Your Message is too short"
+            }
+        }
+    },
+    "inputName": {
+        "label": {
+            "de-de": "Name",
+            "en-us": "Name"
+        },
+        "placeholder": {
+            "de-de": "Dein Name",
+            "en-us": "Your Name"
+        },
+        "error": {
+            "de-de": {
+                "missing": "Dein Name fehlt",
+                "failed": "Wir brauchen deinen Vor- und Nachnamen"
+            },
+            "en-us": {
+                "missing": "Name is Missing",
+                "failed": "We need your first and last name"
+            }
+        }
+    },
+    "inputPhone": {
+        "label": {
+            "de-de": "Telefon",
+            "en-us": "Phone"
+        },
+        "placeholder": {
+            "de-de": "Deine Telefonnummer",
+            "en-us": "Your Phone"
+        }
+    },
+    "languagePicker": {
+        "title": {
+            "de-de": "Wähle deine Sprache",
+            "en-us": "Choose your Language"
+        },
+        "description": {
+            "de-de": "Du kannst deine Sprache jederzeit ändern",
+            "en-us": "You can change your language at any time"
+        }
+    }
+}

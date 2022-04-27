@@ -1,0 +1,10 @@
+.container {
+    .title {
+        cursor: pointer;
+        padding: var(--spacer-3) 0;
+    }
+    .holder {
+        transition: height 0.25s ease-in-out;
+        overflow: hidden;
+    }
+}

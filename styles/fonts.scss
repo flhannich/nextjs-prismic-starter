@@ -1,0 +1,105 @@
+
+@font-face {
+    font-family: 'base';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap; 
+    src: 
+        url('/fonts/base-book.woff2') format('woff2'),
+        url('/fonts/base-book.woff') format('woff');
+}
+
+
+h1, h2, h3, h4, h5, h6, p, li, a, span, blockquote, label, input, textarea, button, text {
+    font-family: 'base', sans-serif;
+    // font-family: sans-serif;
+    font-weight: 300;
+    // font-size: $base-type-size;
+    color: var(--type-color);
+    line-height: $base-line-height;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+    h1 {
+        font-weight: 300;
+        font-size: var(--type-scale-15);
+        line-height: 1;
+        letter-spacing: -0.03em;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: var(--type-scale-12);
+        line-height: 1.125;
+    }
+
+    h3 {
+        font-weight: 300;
+        font-size: var(--type-scale-7); 
+        line-height: 1.25;
+    }
+
+    p {
+        font-size: var(--type-scale-3);        
+        line-height: 1.7;
+        font-weight: 300;
+        // letter-spacing: 0.02em;
+    }
+
+
+    a {
+        line-height: inherit;
+    }
+
+.type-category {
+    font-size: var(--type-scale--min);
+    letter-spacing: 0.03em;
+    color: var(--type-color--light);
+}
+
+.form-select label,
+.form-range label,
+.form-password label,
+.form-input label,
+.form-textarea label {
+    font-size: var(--type-scale--min);
+    letter-spacing: 0.04em;
+}
+
+.form-select select, 
+.form-range input, 
+.form-input input, 
+.form-password input, 
+.form-textarea textarea {
+    font-family: 'base', sans-serif;
+    font-weight: 300;
+    font-size: var(--type-scale-0);
+    line-height: $base-line-height;
+}
+
+.form-submit button {
+    font-weight: 300;
+    font-size: var(--type-scale-0);
+}
+
+.form-legal label {
+    font-size: var(--type-scale--min);
+    line-height: 1.25;
+    // letter-spacing: 0.02em;
+}
+
+.range-error-message,
+.textarea-error-message,
+.password-error-message,
+.select-error-message,
+.checkbox-error-message,
+.input-error-message {
+    font-size: var(--type-scale--min);
+    line-height: 1.25;
+    // letter-spacing: 0.02em;
+}
