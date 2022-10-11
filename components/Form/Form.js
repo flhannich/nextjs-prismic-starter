@@ -12,6 +12,7 @@ import Textarea from './Textarea';
 import Range from './Range';
 import Input from './Input';
 import Select from './Select';
+import Date from './Date';
 import Submit from './Form.submit';
 
 import styles from "./Form.module.scss";
@@ -34,6 +35,8 @@ const Form = ({formfields, type}) => {
 
             <ContextProvider>
                 
+                <Date />
+
                 {data.items && data.items.map((item, index) => {
                     switch(item.type) {
                         case 'form_input':

@@ -8,10 +8,7 @@ import SliceZone from "next-slicezone";
 export default function Home({doc, menu, config, lang, preview, posts, subscribe_form}) {
 
   const { configRef } = useContext(AppContext);  
-    
-  useEffect(() => {
-    configRef.current = config;
-  },[]);
+
 
   return (
     
@@ -21,7 +18,8 @@ export default function Home({doc, menu, config, lang, preview, posts, subscribe
         isPreview={preview.isActive}
         menu={menu}
         subscribe_form={subscribe_form.data}
-      >
+        config={config}
+      > 
 
           <PageTitle data={doc} />
 

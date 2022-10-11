@@ -6,7 +6,7 @@ import { Subscribe, Button } from '@components/index'
 import { useContext } from 'react';
 import { AppContext } from 'context/AppContext';
 
-const Footer = ({ menu, altLangs, lang, subscribe_form}) => {
+const Footer = ({ menu, config,altLangs, lang, subscribe_form}) => {
 
     const { configRef } = useContext(AppContext);
 
@@ -20,18 +20,18 @@ const Footer = ({ menu, altLangs, lang, subscribe_form}) => {
 
             <div className={styles.top}>
 
-                {configRef.current && 
+                {config && 
                     <nav className={styles.contact}>
                         <ul>
                             <li>
-                                <a href={`tel:+49 ${configRef.current.data.phone.substring(1)}`}>{configRef.current.data.phone}</a>
+                                <a href={`tel:+49 ${config.data.phone.substring(1)}`}>{config.data.phone}</a>
                             </li>
                             <li>
-                                <a href={`mailto:${configRef.current.data.mail}`}>{configRef.current.data.mail}</a>
+                                <a href={`mailto:${config.data.mail}`}>{config.data.mail}</a>
                             </li>
                         </ul>
                         <ul>
-                            {configRef.current.data?.social.map((item, index) => (
+                            {config.data?.social.map((item, index) => (
                                 <li key={index}>
                                     <a href={item.link.url} rel="noreferrer nofollow">{item.provider}</a>
                                 </li>
@@ -62,7 +62,7 @@ const Footer = ({ menu, altLangs, lang, subscribe_form}) => {
                 <nav className={styles.legal}>
                     <ul>
                         <li>
-                            {configRef.current && <span>&copy; 2022 {configRef.current.data.sitename}</span>}
+                            {config && <span>&copy; 2022 {config.data.sitename}</span>}
                         </li>
                         {menu.data.legal.map((item, index) => (
                             <li key={index}>

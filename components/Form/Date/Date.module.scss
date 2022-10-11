@@ -1,0 +1,30 @@
+.container{
+    .days {
+        display: flex;
+        flex-wrap: wrap;
+        span {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            border-radius: 40px;
+            border: 2px solid rgba(0,0,0,0);
+            font-size: var(--type-scale-0);
+            margin: 2px;
+            &:hover {
+                border: 2px solid;
+            }
+            &.isToday {
+                background-color: #ddd;
+            }
+            &.isSelected {
+                background-color: #000;
+                border: 2px solid;
+                color: #fff;
+            }
+        }
+    }
+   
+}

@@ -40,8 +40,9 @@ const Input = props => {
     }, [formData]);
 
 
-    const handlerBlur = e => {        
-        update(e)
+    const handlerBlur = e => {    
+        if(e.target.value !== '') 
+            update(e)
     }
 
     const handleChange = e => {
@@ -80,6 +81,7 @@ const Input = props => {
                     onBlur={handlerBlur}
                     onChange={handleChange}
                     pattern={`${data.type === 'phone' ? '[0-9]{3}-[0-9]{3}-[0-9]{4}' : false}`}
+                    maxLength={1000}
                 />
             
 

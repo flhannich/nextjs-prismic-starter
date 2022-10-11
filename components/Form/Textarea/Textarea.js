@@ -44,7 +44,8 @@ const Textarea = props => {
 
 
     const handlerBlur = e => {        
-        update(e)
+        if(e.target.value !== '') 
+            update(e)   
     }
 
     const handleChange = e => {
@@ -81,6 +82,7 @@ const Textarea = props => {
                     placeholder={data.placeholder} 
                     onChange={handleChange}
                     onBlur={handlerBlur}
+                    maxLength={10000}
                 />
             
 

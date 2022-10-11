@@ -2,16 +2,10 @@ import { createClient, manageLocal, linkResolver } from "prismicio";
 import * as prismicH from "@prismicio/helpers";
 import { Layout, PageTitle } from '@components/index';
 import SliceZone from "next-slicezone";
-import { AppContext } from 'context/AppContext';
-import { useContext, useEffect } from 'react';
 
 const Post = ({ doc, menu, config, lang, preview, subscribe_form }) => {
    
-  const { configRef } = useContext(AppContext);
 
-  useEffect(() => {
-    configRef.current = config;
-  },[]);
   
     return (
       <Layout
@@ -20,6 +14,7 @@ const Post = ({ doc, menu, config, lang, preview, subscribe_form }) => {
         isPreview={preview.isActive}
         menu={menu}
         subscribe_form={subscribe_form.data}
+        config={config}
       >
 
         <PageTitle data={doc} />

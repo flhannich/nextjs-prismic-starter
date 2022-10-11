@@ -2,18 +2,11 @@ import { createClient, manageLocal } from "prismicio";
 import SliceZone from "next-slicezone";
 import { Layout , PageTitle} from "@components/index";
 import * as Slices from "@slices/index";
-import { AppContext } from 'context/AppContext';
 import { useContext, useEffect } from 'react';
 
 const resolver = ({ sliceName }) => Slices[sliceName];
 
 export default function Contact({doc, menu, config, lang, preview, subscribe_form, contact_form}) {
-
-  const {  configRef } = useContext(AppContext);
-
-  useEffect(() => {
-    configRef.current = config;
-  },[]);
   
   return (
     
@@ -23,6 +16,7 @@ export default function Contact({doc, menu, config, lang, preview, subscribe_for
         isPreview={preview.isActive}
         menu={menu}
         subscribe_form={subscribe_form.data}
+        config={config}
       >
 
         <PageTitle data={doc} />
