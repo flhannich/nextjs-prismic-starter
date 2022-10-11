@@ -1,31 +1,11 @@
 [
   {
     "variation": "default-slice",
-    "name": "Default slice",
-    "slice_type": "contact_form",
-    "items": [],
-    "primary": {
-      "title": [
-        {
-          "type": "heading1",
-          "text": "Engineer out-of-the-box metrics",
-          "spans": []
-        }
-      ],
-      "description": [
-        {
-          "type": "paragraph",
-          "text": "Proident ut do consequat consequat nisi Lorem culpa qui.",
-          "spans": []
-        }
-      ],
-      "successMessage": [
-        {
-          "type": "paragraph",
-          "text": "Adipisicing do excepteur officia occaecat labore do officia.",
-          "spans": []
-        }
-      ]
-    }
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {},
+    "slice_type": "contact_form"
   }
 ]

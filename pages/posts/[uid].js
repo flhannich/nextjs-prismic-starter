@@ -5,7 +5,7 @@ import SliceZone from "next-slicezone";
 import { AppContext } from 'context/AppContext';
 import { useContext, useEffect } from 'react';
 
-const Post = ({ doc, menu, config, lang, preview }) => {
+const Post = ({ doc, menu, config, lang, preview, subscribe_form}) => {
    
   const { configRef } = useContext(AppContext);
 
@@ -19,6 +19,7 @@ const Post = ({ doc, menu, config, lang, preview }) => {
         lang={lang}
         isPreview={preview.isActive}
         menu={menu}
+        subscribe_form={subscribe_form}
       >
         
         <PageTitle data={doc} />
@@ -49,12 +50,14 @@ export async function getStaticProps({
   const doc = await client.getByUID('post', params.uid, ref ? { ref, lang: locale } : { lang: locale }) || {};
   const menu = await client.getSingle('menu', ref ? { ref, lang: locale } : { lang: locale }) || {};
   const config = await client.getSingle('config', ref ? { ref, lang: locale } : { lang: locale }) || {};
+  const subscribe_form = await client.getSingle('contact_form', ref ? { ref, lang: locale } : { lang: locale }) || {};
 
   return {
     props: {
       doc,
       menu,
       config,
+      subscribe_form,
       preview: {
         isActive: isPreview,
         activeRef: ref,

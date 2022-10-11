@@ -29,8 +29,8 @@ const Header = ({ menu }) => {
                 </ul>
             </nav>
             <button 
-            aria-label="Toggle Mode"
-            onClick={() => setDarkMode(!darkMode)}
+                aria-label="Toggle Mode"
+                onClick={() => setDarkMode(!darkMode)}
             >
                 {darkMode ? 'Light Mode' : 'Dark Mode'}
 

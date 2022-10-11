@@ -18,66 +18,591 @@
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
               "description": "ContactForm",
-              "primary": {
-                "title": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "heading1",
-                    "label": "Title",
-                    "placeholder": "This is where it all begins..."
-                  }
-                },
-                "description": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "paragraph",
-                    "label": "Description",
-                    "placeholder": "A nice description of your feature"
-                  }
-                },
-                "successMessage": {
-                  "type": "StructuredText",
-                  "config": {
-                    "single": "paragraph",
-                    "label": "Success Message",
-                    "placeholder": "A nice description of your feature"
-                  }
-                }
-              },
-              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
-              "items": {}
+              "primary": {},
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
           ]
         },
         "mocks": {
           "default-slice": {
             "variation": "default-slice",
-            "name": "Default slice",
-            "slice_type": "contact_form",
-            "items": [],
-            "primary": {
-              "title": [
-                {
-                  "type": "heading1",
-                  "text": "Engineer out-of-the-box metrics",
-                  "spans": []
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {},
+            "slice_type": "contact_form"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "form_checkbox": {
+        "library": "slices",
+        "id": "form_checkbox",
+        "name": "FormCheckbox",
+        "description": "FormCheckbox",
+        "model": {
+          "id": "form_checkbox",
+          "type": "SharedSlice",
+          "name": "FormCheckbox",
+          "description": "FormCheckbox",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8621",
+              "description": "FormCheckbox",
+              "primary": {
+                "name": {
+                  "type": "Text",
+                  "config": {
+                    "label": "name",
+                    "placeholder": ""
+                  }
+                },
+                "label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "label",
+                    "placeholder": ""
+                  }
+                },
+                "style": {
+                  "type": "Select",
+                  "config": {
+                    "label": "style",
+                    "placeholder": "Style",
+                    "options": [
+                      "checkmark",
+                      "switch"
+                    ],
+                    "default_value": "checkmark"
+                  }
+                },
+                "optional": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "optional",
+                    "placeholder_false": "false",
+                    "placeholder_true": "true",
+                    "default_value": false
+                  }
+                },
+                "error_message_missing": {
+                  "type": "Text",
+                  "config": {
+                    "label": "error message missing",
+                    "placeholder": ""
+                  }
                 }
-              ],
-              "description": [
-                {
-                  "type": "paragraph",
-                  "text": "Proident ut do consequat consequat nisi Lorem culpa qui.",
-                  "spans": []
-                }
-              ],
-              "successMessage": [
-                {
-                  "type": "paragraph",
-                  "text": "Adipisicing do excepteur officia occaecat labore do officia.",
-                  "spans": []
-                }
-              ]
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8621",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "name": "strength",
+              "label": "oxygen",
+              "style": "checkmark",
+              "optional": true,
+              "error_message_missing": "nearer"
+            },
+            "slice_type": "form_checkbox"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "form_input": {
+        "library": "slices",
+        "id": "form_input",
+        "name": "FormInput",
+        "description": "FormInput",
+        "model": {
+          "id": "form_input",
+          "type": "SharedSlice",
+          "name": "FormInput",
+          "description": "FormInput",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "FormInput",
+              "primary": {
+                "name": {
+                  "type": "Text",
+                  "config": {
+                    "label": "name",
+                    "placeholder": ""
+                  }
+                },
+                "type": {
+                  "type": "Select",
+                  "config": {
+                    "label": "type",
+                    "placeholder": "Type",
+                    "options": [
+                      "name",
+                      "email",
+                      "phone"
+                    ],
+                    "default_value": "name"
+                  }
+                },
+                "label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "label",
+                    "placeholder": ""
+                  }
+                },
+                "placeholder": {
+                  "type": "Text",
+                  "config": {
+                    "label": "placeholder",
+                    "placeholder": ""
+                  }
+                },
+                "optional": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "optional",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
+                },
+                "error_message_missing": {
+                  "type": "Text",
+                  "config": {
+                    "label": "error message missing",
+                    "placeholder": ""
+                  }
+                },
+                "error_message_failed": {
+                  "type": "Text",
+                  "config": {
+                    "label": "error message failed",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "name": "smallest",
+              "type": "name",
+              "label": "let",
+              "placeholder": "handle",
+              "optional": false,
+              "error_message_missing": "division",
+              "error_message_failed": "composition"
+            },
+            "slice_type": "form_input"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "form_message": {
+        "library": "slices",
+        "id": "form_message",
+        "name": "FormMessage",
+        "description": "FormMessage",
+        "model": {
+          "id": "form_message",
+          "type": "SharedSlice",
+          "name": "FormMessage",
+          "description": "FormMessage",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8622",
+              "description": "FormMessage",
+              "primary": {
+                "name": {
+                  "type": "Text",
+                  "config": {
+                    "label": "name",
+                    "placeholder": ""
+                  }
+                },
+                "label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "label",
+                    "placeholder": ""
+                  }
+                },
+                "placeholder": {
+                  "type": "Text",
+                  "config": {
+                    "label": "placeholder",
+                    "placeholder": ""
+                  }
+                },
+                "optional": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "optional",
+                    "placeholder_false": "false",
+                    "placeholder_true": "true",
+                    "default_value": true
+                  }
+                },
+                "error_message_missing": {
+                  "type": "Text",
+                  "config": {
+                    "label": "error message missing",
+                    "placeholder": ""
+                  }
+                },
+                "error_message_failed": {
+                  "type": "Text",
+                  "config": {
+                    "label": "error message failed",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8622",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "name": "notice",
+              "label": "example",
+              "placeholder": "order",
+              "optional": true,
+              "error_message_missing": "means",
+              "error_message_failed": "herd"
+            },
+            "slice_type": "form_message"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "form_range": {
+        "library": "slices",
+        "id": "form_range",
+        "name": "FormRange",
+        "description": "FormRange",
+        "model": {
+          "id": "form_range",
+          "type": "SharedSlice",
+          "name": "FormRange",
+          "description": "FormRange",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8623",
+              "description": "FormRange",
+              "primary": {
+                "name": {
+                  "type": "Text",
+                  "config": {
+                    "label": "name",
+                    "placeholder": ""
+                  }
+                },
+                "label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "label",
+                    "placeholder": ""
+                  }
+                },
+                "min_value": {
+                  "type": "Number",
+                  "config": {
+                    "label": "min value",
+                    "placeholder": ""
+                  }
+                },
+                "max_value": {
+                  "type": "Number",
+                  "config": {
+                    "label": "max value",
+                    "placeholder": ""
+                  }
+                },
+                "unit": {
+                  "type": "Text",
+                  "config": {
+                    "label": "unit",
+                    "placeholder": ""
+                  }
+                },
+                "optional": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "optional",
+                    "placeholder_false": "false",
+                    "placeholder_true": "true",
+                    "default_value": false
+                  }
+                },
+                "error_message_missing": {
+                  "type": "Text",
+                  "config": {
+                    "label": "error message missing",
+                    "placeholder": ""
+                  }
+                },
+                "error_message_failed": {
+                  "type": "Text",
+                  "config": {
+                    "label": "error message failed",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8623",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "name": "method",
+              "label": "quiet",
+              "min_value": 6,
+              "max_value": 98,
+              "unit": "thin",
+              "optional": false,
+              "error_message_missing": "cap",
+              "error_message_failed": "sing"
+            },
+            "slice_type": "form_range"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "form_select": {
+        "library": "slices",
+        "id": "form_select",
+        "name": "FormSelect",
+        "description": "FormSelect",
+        "model": {
+          "id": "form_select",
+          "type": "SharedSlice",
+          "name": "FormSelect",
+          "description": "FormSelect",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8624",
+              "description": "FormSelect",
+              "primary": {
+                "name": {
+                  "type": "Text",
+                  "config": {
+                    "label": "name",
+                    "placeholder": ""
+                  }
+                },
+                "label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "label",
+                    "placeholder": ""
+                  }
+                },
+                "optional": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "optional",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
+                },
+                "multiple": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "select multiple",
+                    "placeholder_false": "false",
+                    "placeholder_true": "true",
+                    "default_value": false
+                  }
+                },
+                "style": {
+                  "type": "Select",
+                  "config": {
+                    "label": "style",
+                    "placeholder": "Style for multiple Select",
+                    "options": [
+                      "checkmark",
+                      "switch"
+                    ],
+                    "default_value": "checkmark"
+                  }
+                },
+                "error_message_missing": {
+                  "type": "Text",
+                  "config": {
+                    "label": "error message missing",
+                    "placeholder": ""
+                  }
+                },
+                "error_message_failed": {
+                  "type": "Text",
+                  "config": {
+                    "label": "error message failed",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {
+                "name": {
+                  "type": "Text",
+                  "config": {
+                    "label": "name",
+                    "placeholder": ""
+                  }
+                },
+                "value": {
+                  "type": "Text",
+                  "config": {
+                    "label": "value",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8624",
+            "items": [
+              {
+                "name": "bone",
+                "value": "open"
+              }
+            ],
+            "primary": {
+              "name": "bound",
+              "label": "note",
+              "optional": false,
+              "multiple": false,
+              "style": "checkmark",
+              "error_message_missing": "twelve",
+              "error_message_failed": "hide"
+            },
+            "slice_type": "form_select"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "form_submit": {
+        "library": "slices",
+        "id": "form_submit",
+        "name": "FormSubmit",
+        "description": "FormSubmit",
+        "model": {
+          "id": "form_submit",
+          "type": "SharedSlice",
+          "name": "FormSubmit",
+          "description": "FormSubmit",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "FormSubmit",
+              "primary": {
+                "label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "label",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "label": "fairly"
+            },
+            "slice_type": "form_input"
           }
         },
         "meta": {

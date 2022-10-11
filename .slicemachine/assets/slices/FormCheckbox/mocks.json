@@ -1,0 +1,17 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8621",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "name": "strength",
+      "label": "oxygen",
+      "style": "checkmark",
+      "optional": true,
+      "error_message_missing": "nearer"
+    },
+    "slice_type": "form_checkbox"
+  }
+]

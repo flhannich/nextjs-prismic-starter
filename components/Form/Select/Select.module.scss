@@ -1,0 +1,44 @@
+    .container {
+        position: relative;
+        display: block;
+        .holder {
+            position: relative;
+            &.multiple {
+                label {
+                    display: flex;
+                    margin: var(--spacer-2) 0;
+                }
+            }
+            option {
+                background-color: transparent;
+                padding: var(--spacer-1) 0;
+                background:none;
+                width:auto;
+                height:auto;
+                padding:0;
+                margin:0;
+                border-width: 2px;
+                border-style: inset;
+                -moz-appearance: menulist;
+                -webkit-appearance: menulist;
+                appearance: menulist;
+                &:checked  {
+                    color: red;
+                    outline:0 !important;
+                }
+            }
+            .arrow {
+                position: absolute;
+                right: var(--spacer-2);
+                top: 12px;
+                pointer-events: none;
+                svg {
+                    width: 16px;
+                    height: auto;
+                    path {
+                        stroke: var(--type-color);
+                    }
+                }
+            }
+        }
+    }

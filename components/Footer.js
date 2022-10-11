@@ -6,7 +6,9 @@ import { Subscribe, Button } from '@components/index'
 import { useContext } from 'react';
 import { AppContext } from 'context/AppContext';
 
-const Footer = ({ menu, altLangs, lang }) => {
+const Footer = ({ menu, altLangs, lang, subscribe_form}) => {
+
+    // console.log('subscribe_form', subscribe_form);
 
     const { configRef } = useContext(AppContext);
 
@@ -41,14 +43,14 @@ const Footer = ({ menu, altLangs, lang }) => {
                 }
 
                 <div className={styles.newsletter}>
-                    <Subscribe />
+                    {/* <Subscribe /> */}
                 </div>
 
                 <div className={styles.scrollTop}>  
                     <Button
                         handler={() => scrollToTop()}
                         label={null}
-                        variant="none"
+                        style="none"
                         icon={`scroll_top`}
                     />
                 </div>

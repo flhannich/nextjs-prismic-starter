@@ -1,0 +1,18 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "type": "default",
+      "style": "switch",
+      "label": "present",
+      "optional": false,
+      "error_message_missing": "previous",
+      "error_message_failed": "meal"
+    },
+    "slice_type": "form_input"
+  }
+]

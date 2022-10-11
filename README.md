@@ -8,7 +8,7 @@ https://nextjs-prismic-starter.netlify.app/en-us
 
 ## Features
 - Multilanguage
-- Contact Form (Nodemailer) 
+- Form Builder
 - Basic Mailchimp Subscription Form
 
 ## Getting Started
@@ -33,7 +33,7 @@ Install Netlify CLI
 npm install netlify-cli -g
 ```
 
-Install Prismic Slicemachine
+Setup Netlify for your Project
 ```bash
 netlify init
 ```
@@ -86,13 +86,3 @@ Run Slicemachine
 ```bash
 npm run slicemachine  
 ```
-
-## Notes
-- All UI Texts are stored in /data/UIContent.json
-
-## Issues
-- So far, you have to push all costum types by hand to prismic
-
-## Roadmap
-- Contact Form editable in Prismic
-- Move UIContents to Prismic

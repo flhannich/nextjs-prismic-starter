@@ -1,0 +1,76 @@
+{
+  "id": "form_input",
+  "type": "SharedSlice",
+  "name": "FormInput",
+  "description": "FormInput",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "FormInput",
+      "primary": {
+        "name": {
+          "type": "Text",
+          "config": {
+            "label": "name",
+            "placeholder": ""
+          }
+        },
+        "type": {
+          "type": "Select",
+          "config": {
+            "label": "type",
+            "placeholder": "Type",
+            "options": [
+              "name",
+              "email",
+              "phone"
+            ],
+            "default_value": "name"
+          }
+        },
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "label",
+            "placeholder": ""
+          }
+        },
+        "placeholder": {
+          "type": "Text",
+          "config": {
+            "label": "placeholder",
+            "placeholder": ""
+          }
+        },
+        "optional": {
+          "type": "Boolean",
+          "config": {
+            "label": "optional",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "error_message_missing": {
+          "type": "Text",
+          "config": {
+            "label": "error message missing",
+            "placeholder": ""
+          }
+        },
+        "error_message_failed": {
+          "type": "Text",
+          "config": {
+            "label": "error message failed",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

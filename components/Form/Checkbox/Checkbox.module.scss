@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    width: 100%;
+    label {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        &.has-error {
+            .marker {
+                border-color: var(--border-color--error);
+            }
+        }
+    }
+}

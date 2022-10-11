@@ -1,0 +1,18 @@
+.container{
+    position: relative;
+    display: block;
+    &.hasError {
+        .holder {
+            input {
+                border: 1px solid var(--border-color--error);
+            }
+        }
+    }
+    .holder {
+        position: relative;
+        input {
+            width: 100%;
+        }
+
+    }
+}

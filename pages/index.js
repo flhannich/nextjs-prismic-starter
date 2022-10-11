@@ -5,7 +5,7 @@ import { createClient, manageLocal } from "prismicio";
 import { Layout, PostList, PageTitle} from "@components/index";
 import SliceZone from "next-slicezone";
 
-export default function Home({doc, menu, config, lang, preview, posts}) {
+export default function Home({doc, menu, config, lang, preview, posts, subscribe_form}) {
 
   const { configRef } = useContext(AppContext);  
     
@@ -20,14 +20,16 @@ export default function Home({doc, menu, config, lang, preview, posts}) {
         lang={lang}
         isPreview={preview.isActive}
         menu={menu}
+        subscribe_form={subscribe_form}
       >
 
           <PageTitle data={doc} />
 
-          <PostList data={posts} />
-
-          <SliceZone sliceZone={doc.data.body} />
-
+          <article>
+            <PostList data={posts} />
+            <SliceZone sliceZone={doc.data.body} />
+          </article>
+          
       </Layout>
 
   )
@@ -49,6 +51,7 @@ export async function getStaticProps({
   const doc = await client.getSingle('home', ref ? { ref, lang: locale } : { lang: locale }) || {};
   const menu = await client.getSingle('menu', ref ? { ref, lang: locale } : { lang: locale }) || {};
   const config = await client.getSingle('config', ref ? { ref, lang: locale } : { lang: locale }) || {};
+  const subscribe_form = await client.getSingle('contact_form', ref ? { ref, lang: locale } : { lang: locale }) || {};
 
   const posts = await client.getAllByType("post", {
     fetch : ['post.title', 'post.image'],
@@ -65,6 +68,7 @@ export async function getStaticProps({
       menu,
       config,
       posts,
+      subscribe_form,
       preview: {
         isActive: isPreview,
         activeRef: ref,

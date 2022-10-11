@@ -5,11 +5,11 @@ const PageTitle = ({data}) => {
 
     return (
 
-        <div className={styles.container}>
+        <header className={styles.container}>
 
             {RichText.render(data.data.title)}
 
-        </div>
+        </header>
 
     )   
 }

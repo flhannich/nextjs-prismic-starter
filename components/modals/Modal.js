@@ -9,11 +9,11 @@ const Modal = ({ state, setState, children }) => {
 
   useEffect(() => {
     setIsComponentVisible(state)
-  }, [state])
+  }, [setIsComponentVisible, state])
 
   useEffect(() => {
     setState && setState(isComponentVisible);
-  }, [isComponentVisible])
+  }, [setState, isComponentVisible])
 
     return (
     <>
@@ -26,7 +26,7 @@ const Modal = ({ state, setState, children }) => {
                   className={styles.close}
                   handler={() => setIsComponentVisible(false)}
                   icon="close"
-                  variant="none"
+                  style="none"
               >
               </Button>
           </div>

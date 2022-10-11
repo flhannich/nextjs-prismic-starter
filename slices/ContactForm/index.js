@@ -1,11 +1,13 @@
-import React from 'react'
-import { Contact} from '@components/index'
+import { Form } from '@components/index'
 
-const ContactForm = ({ slice }) => {
-
+const ContactForm = ({slice, data}) => {
+  
   return (
-    
-    <Contact slice={slice} />
+
+    <Form 
+      slice={slice} 
+      formfields={data}
+    />
 
   )
 }

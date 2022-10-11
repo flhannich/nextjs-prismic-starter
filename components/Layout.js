@@ -7,7 +7,7 @@ import {
     LangModal
 } from '@components/index'
 
-const Layout = ({ isPreview, children, altLangs, lang, menu }) => {
+const Layout = ({ isPreview, children, altLangs, lang, menu, subscribe_form }) => {
 
   return (
 
@@ -40,7 +40,8 @@ const Layout = ({ isPreview, children, altLangs, lang, menu }) => {
       altLangs={altLangs}
       lang={lang}
       menu={menu}
-    />
+      subscribe_form={subscribe_form}
+/>
 
   </>
 )};

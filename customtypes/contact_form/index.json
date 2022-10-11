@@ -1,0 +1,67 @@
+{
+  "id": "contact_form",
+  "label": "Contact Form",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "submit_label": {
+        "type": "Text",
+        "config": {
+          "label": "Submit Label",
+          "placeholder": "Submit Label"
+        }
+      },
+      "success_message_title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Success Title",
+          "placeholder": "Title",
+          "allowTargetBlank": true,
+          "single": "heading3"
+        }
+      },
+      "success_message_description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Success Description",
+          "placeholder": "Success Description",
+          "allowTargetBlank": true,
+          "single": "paragraph,em,hyperlink"
+        }
+      },
+      "error_message": {
+        "type": "StructuredText",
+        "config": {
+          "label": "error_message",
+          "placeholder": "",
+          "allowTargetBlank": false,
+          "single": "paragraph"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "form_checkbox": {
+              "type": "SharedSlice"
+            },
+            "form_input": {
+              "type": "SharedSlice"
+            },
+            "form_select": {
+              "type": "SharedSlice"
+            },
+            "form_range": {
+              "type": "SharedSlice"
+            },
+            "form_message": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

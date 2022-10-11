@@ -1,0 +1,38 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "subscribe_form",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "submit_label": "visitor",
+    "success_message_title": [
+      {
+        "type": "heading3",
+        "text": "Railroad",
+        "spans": []
+      }
+    ],
+    "success_message_description": [
+      {
+        "type": "paragraph",
+        "text": "Minim nostrud id cupidatat laborum exercitation in exercitation amet occaecat aute sint.",
+        "spans": []
+      }
+    ],
+    "error_message": [
+      {
+        "type": "paragraph",
+        "text": "Reprehenderit culpa exercitation ut Lorem nisi eu pariatur dolor esse aute consectetur non. Nulla deserunt id enim esse est tempor ex.",
+        "spans": []
+      }
+    ],
+    "slices": []
+  }
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "name": "smallest",
+      "type": "name",
+      "label": "let",
+      "placeholder": "handle",
+      "optional": false,
+      "error_message_missing": "division",
+      "error_message_failed": "composition"
+    },
+    "slice_type": "form_input"
+  }
+]

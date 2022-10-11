@@ -13,6 +13,7 @@
                     a {
                         display: inline-block;
                         line-height: 32px;
+                        font-size: var(--type-scale-0);
                     }
                 }
             }
@@ -36,9 +37,10 @@
                 align-items: center;
                 justify-content: space-between;
                 li {
-                    a {
+                    a, span {
                         display: inline-block;
                         line-height: 32px;
+                        font-size: var(--type-scale--min);
                     }
                 }
             }

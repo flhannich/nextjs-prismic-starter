@@ -5,16 +5,9 @@ export { default as Header } from './Header';
 export { default as Footer } from './Footer';
 export { default as Icons } from './Icons';
 
-export { default as Contact } from './forms/Contact';
-export { default as Subscribe } from './forms/Subscribe';
+export { default as Form } from './Form';
+// export { default as Subscribe } from './forms/Subscribe';
 
-export { default as Input } from './forms/elements/Input';
-export { default as Textarea } from './forms/elements/Textarea';
-export { default as Checkbox } from './forms/elements/Checkbox';
-export { default as Range } from './forms/elements/Range';
-export { default as Select } from './forms/elements/Select';
-export { default as Submit } from './forms/elements/Submit';
-export { default as Password } from './forms/elements/Password';
 
 export { default as LanguageSwitcher } from './buttons/LanguageSwitcher';
 export { default as LanguagePicker } from './buttons/LanguagePicker';

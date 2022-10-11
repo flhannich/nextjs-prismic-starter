@@ -1,0 +1,61 @@
+{
+  "id": "form_checkbox",
+  "type": "SharedSlice",
+  "name": "FormCheckbox",
+  "description": "FormCheckbox",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8621",
+      "description": "FormCheckbox",
+      "primary": {
+        "name": {
+          "type": "Text",
+          "config": {
+            "label": "name",
+            "placeholder": ""
+          }
+        },
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "label",
+            "placeholder": ""
+          }
+        },
+        "style": {
+          "type": "Select",
+          "config": {
+            "label": "style",
+            "placeholder": "Style",
+            "options": [
+              "checkmark",
+              "switch"
+            ],
+            "default_value": "checkmark"
+          }
+        },
+        "optional": {
+          "type": "Boolean",
+          "config": {
+            "label": "optional",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "error_message_missing": {
+          "type": "Text",
+          "config": {
+            "label": "error message missing",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

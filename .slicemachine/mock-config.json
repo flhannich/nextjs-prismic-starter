@@ -1,7 +1,7 @@
 {
   "slices": {
-    "ContactForm": [
-      {
+    "ContactForm": {
+      "0": {
         "variation": "default-slice",
         "name": "Default slice",
         "slice_type": "contact_form",
@@ -22,8 +22,11 @@
             }
           ]
         }
+      },
+      "default-slice": {
+        "primary": {}
       }
-    ],
+    },
     "Newsletter": [
       {
         "variation": "default-slice",
@@ -194,6 +197,36 @@
           }
         }
       }
+    },
+    "FormInput": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "FormCheckbox": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "FormRange": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "FormMessage": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "FormSelect": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "FormSubmit": {
+      "default": {
+        "primary": {}
+      }
     }
   },
   "_cts": {
@@ -246,6 +279,40 @@
     },
     "contacts": {},
     "legal": {},
-    "archive": {}
+    "archive": {},
+    "contact_form": {
+      "success_message_description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "success_message_title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "error_message": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "subscribe_form": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "error_message": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

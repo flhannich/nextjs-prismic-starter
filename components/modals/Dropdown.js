@@ -13,11 +13,11 @@ const Modal = ({ state, setState, children, variant }) => {
 
   useEffect(() => {
     setIsComponentVisible(state)
-  }, [state])
+  }, [setIsComponentVisible, state])
 
   useEffect(() => {
     setState && setState(isComponentVisible);
-  }, [isComponentVisible])
+  }, [setState, isComponentVisible])
 
     return (
     <>
