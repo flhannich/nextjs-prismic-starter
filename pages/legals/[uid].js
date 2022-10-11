@@ -19,7 +19,7 @@ const Post = ({ doc, menu, config, lang, preview, subscribe_form }) => {
         lang={lang}
         isPreview={preview.isActive}
         menu={menu}
-        subscribe_form={subscribe_form}
+        subscribe_form={subscribe_form.data}
       >
 
         <PageTitle data={doc} />
@@ -50,7 +50,7 @@ export async function getStaticProps({
   const doc = await client.getByUID('legal', params.uid, ref ? { ref, lang: locale } : { lang: locale }) || {};
   const menu = await client.getSingle('menu', ref ? { ref, lang: locale } : { lang: locale }) || {};
   const config = await client.getSingle('config', ref ? { ref, lang: locale } : { lang: locale }) || {};
-  const subscribe_form = await client.getSingle('contact_form', ref ? { ref, lang: locale } : { lang: locale }) || {};
+  const subscribe_form = await client.getSingle('subscribe_form', ref ? { ref, lang: locale } : { lang: locale }) || {};
 
   return {
     props: {

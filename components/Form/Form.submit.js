@@ -2,7 +2,7 @@
 import { Button } from '@components/index';
 import { useContext } from 'react';
 import { FormContext } from './Form.context';
-import { sendMail } from './Form.lib';
+import { send } from './Form.lib';
 
 const Submit = props => {
 
@@ -10,7 +10,16 @@ const Submit = props => {
 
     const handler = e => {
         e.preventDefault();
-        sendMail(formData, setFormData);
+
+        if(props.type === 'contact') 
+            send('api/functions/sendmail', formData, setFormData);
+
+        else if(props.type === 'subscribe') 
+            send('api/functions/subscribe', formData, setFormData);
+
+        else 
+            return false;
+
     }
 
     return (

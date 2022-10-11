@@ -8,8 +8,6 @@ import { AppContext } from 'context/AppContext';
 
 const Footer = ({ menu, altLangs, lang, subscribe_form}) => {
 
-    // console.log('subscribe_form', subscribe_form);
-
     const { configRef } = useContext(AppContext);
 
     const scrollToTop = () => {
@@ -43,7 +41,7 @@ const Footer = ({ menu, altLangs, lang, subscribe_form}) => {
                 }
 
                 <div className={styles.newsletter}>
-                    {/* <Subscribe /> */}
+                    <Subscribe data={subscribe_form} />
                 </div>
 
                 <div className={styles.scrollTop}>  

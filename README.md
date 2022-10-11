@@ -7,9 +7,8 @@ https://nextjs-prismic-starter.netlify.app/en-us
 
 
 ## Features
-- Multilanguage
-- Form Builder
-- Basic Mailchimp Subscription Form
+- Multilanguage Support
+- Prismic Slice Form Builder
 
 ## Getting Started
 
@@ -81,7 +80,7 @@ For https, open an new instance and run
 npm run dev-https
 ```
 
-
+Subs
 Run Slicemachine
 ```bash
 npm run slicemachine  

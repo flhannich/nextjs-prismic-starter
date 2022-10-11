@@ -4,17 +4,12 @@ const mailChimpAPIKey = process.env.MAILCHIMP_API_KEY;
 const mailChimpListID = process.env.MAILCHIMP_LIST_ID;
 const mailChimpServerPrefix = process.env.MAILCHIMP_SERVER_PREFIX;
 
+console.log('test');
 
 exports.handler = (event, context, callback) => {
-  let body = {}
-  try {
-    body = JSON.parse(event.body)
-  } catch (e) {
-    body = parse(event.body)
-  }
-
+  
   const data = {
-    email_address: body.email,
+    email_address: JSON.parse(event.body).data.email.message,
     status: "pending",
     merge_fields: {}
   };

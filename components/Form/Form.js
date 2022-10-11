@@ -20,17 +20,17 @@ import ErrorMessage from './Form.error';
 import { checkFormProps } from './Form.lib';
 
 
-const Form = ({slice, formfields}) => {
+const Form = ({formfields, type}) => {
 
     const [data, setData] = useState({});
 
     useEffect(() => {        
-        setData(checkFormProps(slice, formfields))
-    }, [slice, formfields])
+        setData(checkFormProps(formfields))
+    }, [formfields])
 
     return (
         
-        <section className={styles.container}>
+        <section className={`${styles.container} ${styles.type}`}>
 
             <ContextProvider>
                 
@@ -67,14 +67,13 @@ const Form = ({slice, formfields}) => {
                 })}
                 
 
-
-
                 <ErrorMessage 
                     data={data.error_message} 
                 />
 
                 <div className={styles.submit}>
                     <Submit 
+                        type={type}
                         label={data.submit_label}
                     />
                 </div>

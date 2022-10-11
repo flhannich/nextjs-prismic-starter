@@ -1,12 +1,12 @@
 import { Form } from '@components/index'
 
-const ContactForm = ({slice, data}) => {
+const ContactForm = ({data}) => {
   
   return (
 
     <Form 
-      slice={slice} 
       formfields={data}
+      type="contact"
     />
 
   )

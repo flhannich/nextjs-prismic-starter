@@ -32,14 +32,6 @@ exports.handler = function(event, context, callback) {
         subject: `E-mail from ${data.data.name.message}`,
         html: `${generateMessage(data.data)}`
     }
-
-
-    // ${data.data.email ? data.data.email.message : 'Unknown Email'}
-    // ${data.data.name ? data.data.name.message : 'Unknown Name'}
-    // ${data.data.phone ? data.data.phone.message : 'Unknown Phone'}
-    // ${data.data.range ? data.data.range.message : 'Unknown Range'}
-    // ${data.data.message ? data.data.message.message : 'Unknown Message'}
-
     
     let transporter = nodemailer.createTransport(settings);
 

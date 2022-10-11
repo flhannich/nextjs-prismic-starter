@@ -1,16 +1,16 @@
 import { Form } from '@components/index'
 
-const Newsletter = ({slice, data}) => {
-  
+const Subscribe = ({data}) => {
+
   return (
 
     <Form 
-      slice={slice} 
       formfields={data}
+      type="subscribe"
     />
 
   )
 }
 
 
-export default Newsletter
+export default Subscribe

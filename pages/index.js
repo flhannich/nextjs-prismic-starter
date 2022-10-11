@@ -20,7 +20,7 @@ export default function Home({doc, menu, config, lang, preview, posts, subscribe
         lang={lang}
         isPreview={preview.isActive}
         menu={menu}
-        subscribe_form={subscribe_form}
+        subscribe_form={subscribe_form.data}
       >
 
           <PageTitle data={doc} />
@@ -51,7 +51,7 @@ export async function getStaticProps({
   const doc = await client.getSingle('home', ref ? { ref, lang: locale } : { lang: locale }) || {};
   const menu = await client.getSingle('menu', ref ? { ref, lang: locale } : { lang: locale }) || {};
   const config = await client.getSingle('config', ref ? { ref, lang: locale } : { lang: locale }) || {};
-  const subscribe_form = await client.getSingle('contact_form', ref ? { ref, lang: locale } : { lang: locale }) || {};
+  const subscribe_form = await client.getSingle('subscribe_form', ref ? { ref, lang: locale } : { lang: locale }) || {};
 
   const posts = await client.getAllByType("post", {
     fetch : ['post.title', 'post.image'],

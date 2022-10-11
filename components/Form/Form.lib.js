@@ -19,7 +19,7 @@ async function postData(url = '', data = {}) {
 
 
   
-export const sendMail = (formData, setFormData) => {
+export const send = (url, formData, setFormData) => {
     let hasErrors = checkForFormErrors(formData, setFormData);
 
     if(hasErrors) {
@@ -36,7 +36,7 @@ export const sendMail = (formData, setFormData) => {
         hasErrors: false,
     })
     
-    postData('/api/functions/sendmail', formData)
+    postData(url, formData)
         .then(res => {
             if(!res.success) {
                 setFormData({
@@ -87,7 +87,7 @@ export const generateID = () => {
 } 
 
 
-export const checkFormProps = (slice, formfields) => {
+export const checkFormProps = formfields => {
     return {
         submit_label: formfields.submit_label ? formfields.submit_label : 'No label definded',
         success_title: formfields.success_message_title ? RichText.asText(formfields.success_message_title) : 'No success title definded',

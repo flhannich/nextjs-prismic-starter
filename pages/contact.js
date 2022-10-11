@@ -22,7 +22,7 @@ export default function Contact({doc, menu, config, lang, preview, subscribe_for
         lang={lang}
         isPreview={preview.isActive}
         menu={menu}
-        subscribe_form={subscribe_form}
+        subscribe_form={subscribe_form.data}
       >
 
         <PageTitle data={doc} />
@@ -56,7 +56,7 @@ export async function getStaticProps({
   const menu = await client.getSingle('menu', ref ? { ref, lang: locale } : { lang: locale }) || {};
   const config = await client.getSingle('config', ref ? { ref, lang: locale } : { lang: locale }) || {};
   const contact_form = await client.getSingle('contact_form', ref ? { ref, lang: locale } : { lang: locale }) || {};
-  const subscribe_form = await client.getSingle('contact_form', ref ? { ref, lang: locale } : { lang: locale }) || {};
+  const subscribe_form = await client.getSingle('subscribe_form', ref ? { ref, lang: locale } : { lang: locale }) || {};
 
   return {
     props: {

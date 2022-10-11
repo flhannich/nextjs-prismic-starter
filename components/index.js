@@ -17,6 +17,7 @@ export { default as Button } from './buttons/Button';
 export { default as SocialLinks } from './elements/SocialLinks';
 export { default as PageTitle } from './elements/PageTitle';
 export { default as Accordion } from './elements/Accordion';
+export { default as Subscribe } from './elements/Subscribe';
 export { default as Image } from './elements/Image';
 
 export { default as PostList } from './lists/PostList';

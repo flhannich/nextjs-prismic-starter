@@ -27,8 +27,8 @@
         "primary": {}
       }
     },
-    "Newsletter": [
-      {
+    "Newsletter": {
+      "0": {
         "variation": "default-slice",
         "name": "Default slice",
         "slice_type": "newsletter",
@@ -49,8 +49,11 @@
             }
           ]
         }
+      },
+      "default-slice": {
+        "primary": {}
       }
-    ],
+    },
     "FontTitle": [
       {
         "variation": "default-slice",
