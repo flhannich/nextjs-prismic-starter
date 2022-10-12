@@ -130,6 +130,90 @@
         },
         "screenshotPaths": {}
       },
+      "form_date": {
+        "library": "slices",
+        "id": "form_date",
+        "name": "FormDate",
+        "description": "FormDate",
+        "model": {
+          "id": "form_date",
+          "type": "SharedSlice",
+          "name": "FormDate",
+          "description": "FormDate",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8624",
+              "description": "FormDate",
+              "primary": {
+                "name": {
+                  "type": "Text",
+                  "config": {
+                    "label": "name",
+                    "placeholder": ""
+                  }
+                },
+                "label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "label",
+                    "placeholder": ""
+                  }
+                },
+                "placeholder": {
+                  "type": "Text",
+                  "config": {
+                    "label": "placeholder",
+                    "placeholder": ""
+                  }
+                },
+                "optional": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "optional",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
+                },
+                "error_message_missing": {
+                  "type": "Text",
+                  "config": {
+                    "label": "error message missing",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8624",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "name": "on",
+              "label": "case",
+              "placeholder": "solid",
+              "optional": false,
+              "error_message_missing": "talk"
+            },
+            "slice_type": "form_date"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "form_input": {
         "library": "slices",
         "id": "form_input",
@@ -468,6 +552,13 @@
                     "placeholder": ""
                   }
                 },
+                "placeholder": {
+                  "type": "Text",
+                  "config": {
+                    "label": "placeholder",
+                    "placeholder": ""
+                  }
+                },
                 "optional": {
                   "type": "Boolean",
                   "config": {
@@ -489,7 +580,7 @@
                 "style": {
                   "type": "Select",
                   "config": {
-                    "label": "style",
+                    "label": "style multiple",
                     "placeholder": "Style for multiple Select",
                     "options": [
                       "checkmark",
@@ -539,18 +630,19 @@
             "version": "sktwi1xtmkfgx8624",
             "items": [
               {
-                "name": "bone",
-                "value": "open"
+                "name": "ruler",
+                "value": "egg"
               }
             ],
             "primary": {
-              "name": "bound",
-              "label": "note",
-              "optional": false,
-              "multiple": false,
-              "style": "checkmark",
-              "error_message_missing": "twelve",
-              "error_message_failed": "hide"
+              "name": "structure",
+              "label": "wheel",
+              "placeholder": "fallen",
+              "optional": true,
+              "multiple": true,
+              "style": "switch",
+              "error_message_missing": "sleep",
+              "error_message_failed": "stone"
             },
             "slice_type": "form_select"
           }
@@ -603,6 +695,90 @@
               "label": "fairly"
             },
             "slice_type": "form_input"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "form_time": {
+        "library": "slices",
+        "id": "form_time",
+        "name": "FormTime",
+        "description": "FormTime",
+        "model": {
+          "id": "form_time",
+          "type": "SharedSlice",
+          "name": "FormTime",
+          "description": "FormTime",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8624",
+              "description": "FormTime",
+              "primary": {
+                "name": {
+                  "type": "Text",
+                  "config": {
+                    "label": "name",
+                    "placeholder": ""
+                  }
+                },
+                "label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "label",
+                    "placeholder": ""
+                  }
+                },
+                "placeholder": {
+                  "type": "Text",
+                  "config": {
+                    "label": "placeholder",
+                    "placeholder": ""
+                  }
+                },
+                "optional": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "optional",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
+                },
+                "error_message_missing": {
+                  "type": "Text",
+                  "config": {
+                    "label": "error message missing",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8624",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "name": "wife",
+              "label": "weak",
+              "placeholder": "silly",
+              "optional": true,
+              "error_message_missing": "opinion"
+            },
+            "slice_type": "form_time"
           }
         },
         "meta": {

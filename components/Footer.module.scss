@@ -1,5 +1,6 @@
 .container {
     padding: var(--spacer-7) var(--padding--site);
+    overflow: hidden;
     .top {
         display: flex;
         justify-content: space-between;

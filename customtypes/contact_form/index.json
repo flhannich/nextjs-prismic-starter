@@ -58,6 +58,12 @@
             },
             "form_message": {
               "type": "SharedSlice"
+            },
+            "form_date": {
+              "type": "SharedSlice"
+            },
+            "form_time": {
+              "type": "SharedSlice"
             }
           }
         }

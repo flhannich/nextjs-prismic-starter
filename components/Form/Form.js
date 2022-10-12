@@ -13,6 +13,7 @@ import Range from './Range';
 import Input from './Input';
 import Select from './Select';
 import Date from './Date';
+import Time from './Time';
 import Submit from './Form.submit';
 
 import styles from "./Form.module.scss";
@@ -35,8 +36,6 @@ const Form = ({formfields, type}) => {
 
             <ContextProvider>
                 
-                <Date />
-
                 {data.items && data.items.map((item, index) => {
                     switch(item.type) {
                         case 'form_input':
@@ -49,6 +48,14 @@ const Form = ({formfields, type}) => {
                                 <Select key={index} data={item.data} items={item.items}/>
                             )
                         break;
+                        case 'form_time':
+                            return (
+                                <Time key={index} data={item.data} />
+                            )
+                        case 'form_date':
+                            return (
+                                <Date key={index} data={item.data} />
+                            )
                         case 'form_range':
                             return (
                                 <Range key={index} data={item.data} />

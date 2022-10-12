@@ -6,7 +6,7 @@ const SelectMultiple = ({data, valid, handler}) => {
     
     const [arr, setArr] = useState([]);
 
-    const testHandler = e => {
+    const changeHandler = e => {
 
         let name =  e.target.name,
             res = [];
@@ -41,7 +41,7 @@ const SelectMultiple = ({data, valid, handler}) => {
                 type="checkbox" 
                 name={item.value}
                 checked={item.checked}
-                onChange={testHandler}
+                onChange={(e) => changeHandler(e)}
             />
 
             {data.style === 'switch' && 

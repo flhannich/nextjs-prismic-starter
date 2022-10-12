@@ -47,9 +47,14 @@ export const FormProvider = ({ children }) => {
       checked = e.target.checked;
       isCheckBox = e.target.hasOwnProperty('checked');
     } 
-    else if(Array.isArray(e.value)) {
+    else if(Array.isArray(e.value)) { // Join multi select results
       name = e.name;
       value = e.value.join(', ');
+      isCheckBox = false;
+    }
+    else if (typeof e === 'object') { // if result doesnt come from input
+      name = e.name,
+      value = e.value,
       isCheckBox = false;
     }
     

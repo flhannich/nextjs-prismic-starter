@@ -14,7 +14,8 @@ $base-line-height: 1.5;
     --grid-gap: var(--spacer-4);
     --padding--site: var(--spacer-3);
 
-    --bezier : cubic-bezier(.32,.37,.05,1.01);    
+    --bezier: cubic-bezier(.32,.37,.05,1.01);    
+    --shadow: 0px 4px 24px 0px rgba(0,0,0,0.1);
 
     @media(min-width: 768px) {
         --padding--site: var(--spacer-7);

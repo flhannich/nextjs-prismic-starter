@@ -109,6 +109,7 @@ export const checkProps = props => {
     return {
         name: props.data.name || generateID(),
         label: props.data.label || 'no label defined',
+        placeholder: props.data.placeholder || false,
         optional: props.data.optional || false,
         type: props.data.type || false,
         style: props.data.style || null,

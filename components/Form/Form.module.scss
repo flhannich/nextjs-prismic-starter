@@ -1,7 +1,7 @@
 .container {
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
-    padding: var(--spacer-6);
+    padding: var(--spacer-3);
     .submit {
         padding-top: var(--spacer-3);
     }
@@ -211,5 +211,59 @@
                 background-color: #fff;
             }
         }
+    }
+}
+.symbol {
+    position: absolute;
+    right: var(--spacer-2);
+    top: 12px;
+    pointer-events: none;
+    svg {
+        width: 16px;
+        height: auto;
+        path {
+            stroke: var(--type-color);
+        }
+    }
+}
+.reset {
+    position: absolute;
+    right: var(--spacer-2);
+    top: 7px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 100px;
+    z-index: 1;
+    svg {
+        width: 12px;
+        height: auto;
+        path {
+            stroke: var(--type-color);
+        }
+    }
+}
+.modal {
+    padding: var(--spacer-3);
+    border: 1px solid #ddd;
+    .close {
+        position: absolute;
+        top: var(--spacer-2);
+        right: var(--spacer-2);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            width: 20px;
+            height: auto;
+        }
+    }
+    .holder {
+        
     }
 }

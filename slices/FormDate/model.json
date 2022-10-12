@@ -1,15 +1,15 @@
 {
-  "id": "form_select",
+  "id": "form_date",
   "type": "SharedSlice",
-  "name": "FormSelect",
-  "description": "FormSelect",
+  "name": "FormDate",
+  "description": "FormDate",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8624",
-      "description": "FormSelect",
+      "description": "FormDate",
       "primary": {
         "name": {
           "type": "Text",
@@ -41,58 +41,15 @@
             "placeholder_false": "false"
           }
         },
-        "multiple": {
-          "type": "Boolean",
-          "config": {
-            "label": "select multiple",
-            "placeholder_false": "false",
-            "placeholder_true": "true",
-            "default_value": false
-          }
-        },
-        "style": {
-          "type": "Select",
-          "config": {
-            "label": "style multiple",
-            "placeholder": "Style for multiple Select",
-            "options": [
-              "checkmark",
-              "switch"
-            ],
-            "default_value": "checkmark"
-          }
-        },
         "error_message_missing": {
           "type": "Text",
           "config": {
             "label": "error message missing",
             "placeholder": ""
           }
-        },
-        "error_message_failed": {
-          "type": "Text",
-          "config": {
-            "label": "error message failed",
-            "placeholder": ""
-          }
         }
       },
-      "items": {
-        "name": {
-          "type": "Text",
-          "config": {
-            "label": "name",
-            "placeholder": ""
-          }
-        },
-        "value": {
-          "type": "Text",
-          "config": {
-            "label": "value",
-            "placeholder": ""
-          }
-        }
-      },
+      "items": {},
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]

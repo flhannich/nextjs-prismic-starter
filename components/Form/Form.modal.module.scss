@@ -1,0 +1,46 @@
+.container {
+    position: absolute;
+    left: 0;
+
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    z-index: 100;
+    box-shadow: var(--shadow);
+    &.date {
+        padding: var(--spacer-3);
+        left: 0;
+        right: 0;
+    }
+    &.time {
+        right: 0;
+        left: auto;
+        .holder {
+            max-height: 200px;
+            overflow: auto;
+        }
+    }
+    &.default {
+        padding: var(--spacer-2) 0;
+        left: 0;
+        right: 0;
+        .holder {
+            max-height: 200px;
+            overflow: auto;
+        }
+    }
+    &.isVisible {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    &.isHidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .close {
+        position: absolute;
+        top: var(--spacer-3);
+        right: var(--spacer-3);
+        z-index: 1;
+        display: none;
+    }
+}

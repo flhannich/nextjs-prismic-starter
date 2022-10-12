@@ -1,21 +1,27 @@
 
 import { Button } from '@components/index';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { FormContext } from './Form.context';
 import { send } from './Form.lib';
 
 const Submit = props => {
-
+    
     const { formData, setFormData } = useContext(FormContext);
-
+    const [url, setUrl] = useState(null);
+    
+    useEffect(() => {
+        setUrl(window.location.origin);
+        console.log(window.location.origin);
+    },[])
+    
     const handler = e => {
         e.preventDefault();
 
         if(props.type === 'contact') 
-            send('api/functions/sendmail', formData, setFormData);
+            send(`${url}/api/functions/sendmail`, formData, setFormData);
 
         else if(props.type === 'subscribe') 
-            send('api/functions/subscribe', formData, setFormData);
+            send(`${url}/api/functions/subscribe`, formData, setFormData);
 
         else 
             return false;

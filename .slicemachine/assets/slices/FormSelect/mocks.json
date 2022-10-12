@@ -4,18 +4,19 @@
     "version": "sktwi1xtmkfgx8624",
     "items": [
       {
-        "name": "bone",
-        "value": "open"
+        "name": "ruler",
+        "value": "egg"
       }
     ],
     "primary": {
-      "name": "bound",
-      "label": "note",
-      "optional": false,
-      "multiple": false,
-      "style": "checkmark",
-      "error_message_missing": "twelve",
-      "error_message_failed": "hide"
+      "name": "structure",
+      "label": "wheel",
+      "placeholder": "fallen",
+      "optional": true,
+      "multiple": true,
+      "style": "switch",
+      "error_message_missing": "sleep",
+      "error_message_failed": "stone"
     },
     "slice_type": "form_select"
   }

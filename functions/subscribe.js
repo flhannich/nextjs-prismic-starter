@@ -4,7 +4,6 @@ const mailChimpAPIKey = process.env.MAILCHIMP_API_KEY;
 const mailChimpListID = process.env.MAILCHIMP_LIST_ID;
 const mailChimpServerPrefix = process.env.MAILCHIMP_SERVER_PREFIX;
 
-console.log('test');
 
 exports.handler = (event, context, callback) => {
   

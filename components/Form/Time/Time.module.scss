@@ -1,0 +1,27 @@
+
+.container {
+    .holder {
+        position: relative;    
+        input {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+}
+.timeSelect {
+    padding: var(--spacer-2) 0;
+    .holder {
+        padding: var(--spacer-2) var(--spacer-3);
+        border-radius: var(--border-radius--small);
+        min-width: 100px;
+        cursor: pointer;
+        &:hover {
+            background-color: #ddd;
+        }
+        span {
+            display: block;
+            font-size: var(--type-scale--min);
+        }
+    }
+}

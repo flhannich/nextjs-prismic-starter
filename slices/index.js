@@ -2,31 +2,37 @@
 
 import ContactForm from './ContactForm';
 import FormCheckbox from './FormCheckbox';
+import FormDate from './FormDate';
 import FormInput from './FormInput';
 import FormMessage from './FormMessage';
 import FormRange from './FormRange';
 import FormSelect from './FormSelect';
 import FormSubmit from './FormSubmit';
+import FormTime from './FormTime';
 import Newsletter from './Newsletter';
 
 export {
 	ContactForm,
 	FormCheckbox,
+	FormDate,
 	FormInput,
 	FormMessage,
 	FormRange,
 	FormSelect,
 	FormSubmit,
+	FormTime,
 	Newsletter,
 };
 
 export const components = {
 	contact_form: ContactForm,
 	form_checkbox: FormCheckbox,
+	form_date: FormDate,
 	form_input: FormInput,
 	form_message: FormMessage,
 	form_range: FormRange,
 	form_select: FormSelect,
 	form_submit: FormSubmit,
+	form_time: FormTime,
 	newsletter: Newsletter,
 };

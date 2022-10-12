@@ -7,7 +7,7 @@ import styles from './Select.module.scss';
 import sharedStyles from './../Form.module.scss';
 import SelectSingle from './Select.single';
 import SelectMultiple from './Select.multiple';
-
+ 
 const Select = props => {
         
     const { updateFormData, registerFormData, formData } = useContext(FormContext);
@@ -24,8 +24,8 @@ const Select = props => {
     useEffect(() => {  
         if(!data.items) return
 
-        let defaultValiue = data.multiple ? '' : data.items[0].value;
-        registerFormData(data.name, defaultValiue, data.optional ? true : false)
+        // let defaultValiue = data.multiple ? '' : data.items[0].value;
+        registerFormData(data.name, '', data.optional ? true : false)
     }, [data]);
 
 
@@ -43,13 +43,6 @@ const Select = props => {
             formData.data[data.name]?.valid === true
         )
     }, [formData]);
-    
-
-    const handleSingleChange = e => {
-        let res = validateSingle(e.target.value, data.optional)
-        
-        updateFormData(e, res)
-    }
 
 
     const handleMultipleChange = obj => {
@@ -57,7 +50,6 @@ const Select = props => {
 
         updateFormData(obj, res)
     }
-
 
     return (
 
@@ -72,7 +64,7 @@ const Select = props => {
                 }
             </label>
 
-            <div className={`${styles.holder} ${data.multiple ? styles.multiple : ''}`}>
+            <div className={`${styles.holder} ${data.multiple ? styles.multiple : styles.single}`}>
 
                 {data.multiple 
                     ?   <SelectMultiple 
@@ -81,17 +73,14 @@ const Select = props => {
                             handler={handleMultipleChange}
                         />
 
-                    :   <SelectSingle
+                    :   
+                        <SelectSingle
                             data={data} 
-                            valid={formData.data[data.name]?.valid} 
-                            handler={handleSingleChange}
                         />
                 }
                 
-
-
                 {!data.multiple &&
-                    <div className={styles.arrow}>
+                    <div className={sharedStyles.symbol}>
                         <Icons name="arrow"/>
                     </div>
                 }

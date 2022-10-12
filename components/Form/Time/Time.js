@@ -1,14 +1,14 @@
 import { useState, useEffect, useContext, useRef } from "react";
 import { FormContext } from '../Form.context';
-import { validate } from './Date.lib';
+import { validate } from './Time.lib';
 import { checkProps } from './../Form.lib';
-import styles from './Date.module.scss';
+import styles from './Time.module.scss';
 import sharedStyles from './../Form.module.scss';
-import DateSelect from './Date.select';
+import TimeSelect from './Time.select';
 import Modal from './../Form.modal';
 import { Icons } from '@components/index';
 
-const Date = props => {
+const Time = props => {
     
     const { updateFormData, registerFormData, formData } = useContext(FormContext);
 
@@ -49,12 +49,6 @@ const Date = props => {
 
     }, [formData]);
     
-
-    const handleChange = e => {
-        let res = validate(e.target.value, data.optional)
-        updateFormData(e, res)
-    }
-
     
     const handleDateSelect = date => {
         let obj = {
@@ -68,10 +62,6 @@ const Date = props => {
 
     const handleClick = () => {
         setModalState(!modalState);
-    }
-
-    const preventKeys = e => {
-        e.preventDefault()
     }
     
     const resetDateSelection = () => {
@@ -99,28 +89,29 @@ const Date = props => {
                         type="text"
                         placeholder={data.placeholder}
                         onClick={handleClick}
-                        onChange={handleChange}
                     />
                     
                     {formData.data[data.name]?.message === ''
+                    
                     ?   <div className={sharedStyles.symbol}>
                             <Icons name="arrow"/>
                         </div>
+                        
                     :    <div 
                             className={sharedStyles.reset}
                             onClick={resetDateSelection}
                         >
                            <Icons name="close"/>
                         </div>
+                        
                     }
                     
-                
                     <Modal
                         state={modalState}
                         setState={setModalState}
-                        style="date"
+                        style="time"
                     >
-                        <DateSelect 
+                        <TimeSelect 
                             handler={handleDateSelect} 
                             setState={setModalState}
                         />
@@ -139,5 +130,5 @@ const Date = props => {
     )
 }
 
-export default Date;
+export default Time;
 

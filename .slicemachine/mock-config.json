@@ -230,6 +230,17 @@
       "default": {
         "primary": {}
       }
+    },
+    "FormDate": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "FormTime": {
+      "default": {
+        "primary": {}
+      }
     }
   },
   "_cts": {
