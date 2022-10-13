@@ -25,7 +25,7 @@ const FormModal = ({ state, setState, children, style }) => {
               <Button            
                   handler={() => setIsComponentVisible(false)}
                   icon="close"
-                  style="none"
+                  classname="icon"
               >
               </Button>
           </div>

@@ -17,7 +17,7 @@
         min-width: 100px;
         cursor: pointer;
         &:hover {
-            background-color: #ddd;
+            background-color: var(--background-color--highlight);
         }
         span {
             display: block;

@@ -26,7 +26,7 @@ const Modal = ({ state, setState, children }) => {
                   className={styles.close}
                   handler={() => setIsComponentVisible(false)}
                   icon="close"
-                  style="none"
+                  classname="icon"
               >
               </Button>
           </div>

@@ -19,12 +19,11 @@
         }
         input {
             -webkit-appearance: none;
-            background: rgba(255, 255, 255, 0.6);
-            height: 4px;
+            height: 3px;
             border-radius: var(--border-radius);
             background-image: linear-gradient(var(--border-color--dark), var(--border-color--dark));
             background-color: var(--border-color);
-            background-size: 70% 100%;
+            // background-size: 70% 100%;
             background-repeat: no-repeat;
             &::-webkit-slider-thumb {
                 -webkit-appearance: none;

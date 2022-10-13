@@ -6,7 +6,7 @@ const Subscribe = ({data}) => {
 
     <Form 
       formfields={data}
-      type="subscribe"
+      variant="subscribe"
     />
 
   )

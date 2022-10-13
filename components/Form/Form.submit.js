@@ -32,12 +32,17 @@ const Submit = props => {
 
         <Button 
             type="submit"
-            style="cta"
+            classname={props.variant === 'contact' ? 'cta' : 'icon'}
             handler={(e) => handler(e)}
+            icon={props.variant === 'contact' ? false : 'arrow'}
         >
-            {props.sending 
-                ?  <>Sending....</>
-                :  <>{props.label}</>
+            { props.variant === 'contact' && 
+                <>
+                    {props.sending 
+                        ?  <>Sending....</>
+                        :  <>{props.label}</>
+                    }
+                </>
             }
         </Button>
 

@@ -2,8 +2,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 32px;
-    min-height: 32px;
     border-radius: var(--border-radius);
     white-space: nowrap;
     font-size: var(--type-scale-0);
@@ -14,21 +12,26 @@
             }
         }
     }
+    &.default {
+        background-color: var(--background-color--button--default);
+        padding: 0 var(--spacer-3);
+        height: 32px;
+        line-height: 34px;
+    }
     &.cta {
         color: var(--type-color--invert);
-        background-color: var(--background-color--invert);
+        background-color: var(--background-color--button--cta);
         padding: 0 var(--spacer-4);
-        border-radius: 100px;
-        min-height: 40px;
+        height: 40px;
+        line-height: 42px;
     }
-    &.none {
+    &.icon {
         color: var(--type-color);
-        padding: var(--spacer-1) var(--spacer-2);
-        font-weight: 300;
-        border: none;
+        padding: var(--spacer-1) var(--spacer-1);
+        width: 40px;
+        height: 40px;
         svg {
-            margin-left: var(--spacer-3);
-            width: 24px;
+            width: 20px;
             height: auto;
             path {
                 stroke: var(--type-color);

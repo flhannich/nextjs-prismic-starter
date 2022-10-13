@@ -3,10 +3,11 @@ import NextLink from 'next/link'
 import { linkResolver } from 'prismicio'
 import { useContext } from 'react';
 import { AppContext } from '@context/AppContext';
+import { Button } from '@components/index';
 
 const Header = ({ menu }) => {
 
-    const {darkMode, setDarkMode} = useContext(AppContext);
+    const { darkMode, setDarkMode } = useContext(AppContext);
 
     return (
 
@@ -28,13 +29,16 @@ const Header = ({ menu }) => {
                     ))}
                 </ul>
             </nav>
-            <button 
-                aria-label="Toggle Mode"
-                onClick={() => setDarkMode(!darkMode)}
+
+            <Button
+                handler={() => setDarkMode(!darkMode)}
+                ariaLabel="Toggle Mode"
+                classname="default"
+                icon={false}
             >
                 {darkMode ? 'Light Mode' : 'Dark Mode'}
-
-            </button>
+            </Button>
+ 
         </header>
 
     )

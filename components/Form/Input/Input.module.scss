@@ -1,6 +1,7 @@
 .container{
     position: relative;
     display: block;
+    width: 100%;
     &.hasError {
         .holder {
             input {

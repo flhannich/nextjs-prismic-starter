@@ -84,7 +84,7 @@
                 }
                 &.isToday {
                     span {
-                        background-color: #ddd;
+                        background-color: var(--background-color--highlight);
                     }
                 }
                 &.isSelected {

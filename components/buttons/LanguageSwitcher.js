@@ -36,7 +36,7 @@ const LanguageSwitcher = ({ altLangs, lang }) => {
           <div className={styles.container} >
 
               <Button            
-                style="none"
+                classname="icon"
                 handler={() => setDropdownState(!dropdownState)}
                 label={`Change Language`}
                 icon={`globe`}

@@ -1,9 +1,13 @@
 .container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: var(--spacer-3);
-    .submit {
-        padding-top: var(--spacer-3);
+    &.contact {
+        .submit {
+            padding-top: var(--spacer-3);
+        }
+    }
+    &.subscribe {
+        display: flex;
+        align-items: flex-end;
+        gap: var(--spacer-2);
     }
     .errorMessage {
         display: inline-block;
@@ -24,11 +28,11 @@
         color: var(--type-color--success);
     }   
     & > * {
-        padding-bottom: var(--spacer-3);
+        padding-bottom: var(--spacer-4);
         .successMarker,
         .errorMarker {
             position: absolute;
-            top: 8px;
+            top: 12px;
             right: var(--spacer-2);
             z-index: 1;
             pointer-events: none;
@@ -68,9 +72,9 @@
         textarea {
             position: relative;
             display: block;
-            padding: 0 var(--spacer-2);
-            min-height: 40px;
-            line-height: 40px;
+            padding: 0 var(--spacer-3);
+            height: 48px;
+            line-height: 38px;
             border: 1px solid var(--border-color--input);
             background-color: var(--background-color--input);
             border-radius: var(--border-radius);
@@ -82,6 +86,10 @@
             &:focus {
                 border-color: var(--accent-color);
             }
+        }
+        textarea {
+            padding: 4px var(--spacer-3) 0 var(--spacer-3);
+            height: inherit;
         }
         select  {
             position: relative;
@@ -114,7 +122,6 @@
         }
     }
 }
-
 .switch {
     label {
         padding-left: 40px;
@@ -215,8 +222,8 @@
 }
 .symbol {
     position: absolute;
-    right: var(--spacer-2);
-    top: 12px;
+    right: var(--spacer-3);
+    top: 16px;
     pointer-events: none;
     svg {
         width: 16px;
@@ -229,14 +236,14 @@
 .reset {
     position: absolute;
     right: var(--spacer-2);
-    top: 7px;
+    top: 10px;
     width: 28px;
     height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background-color: #ccc;
+    background-color: var(--background-color--button--default);
     border-radius: 100px;
     z-index: 1;
     svg {
@@ -249,7 +256,6 @@
 }
 .modal {
     padding: var(--spacer-3);
-    border: 1px solid #ddd;
     .close {
         position: absolute;
         top: var(--spacer-2);
@@ -262,8 +268,5 @@
             width: 20px;
             height: auto;
         }
-    }
-    .holder {
-        
     }
 }

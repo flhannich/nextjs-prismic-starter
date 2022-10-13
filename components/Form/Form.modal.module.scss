@@ -1,22 +1,23 @@
 .container {
     position: absolute;
     left: 0;
-
     background-color: var(--background-color);
     border-radius: var(--border-radius);
     z-index: 100;
     box-shadow: var(--shadow);
     &.date {
         padding: var(--spacer-3);
-        left: 0;
+        left: auto;
         right: 0;
+        max-width: 350px;
     }
     &.time {
         right: 0;
         left: auto;
         .holder {
             max-height: 200px;
-            overflow: auto;
+            width: 100%;
+            overflow-x: hidden;
         }
     }
     &.default {

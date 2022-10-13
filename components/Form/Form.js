@@ -22,7 +22,7 @@ import ErrorMessage from './Form.error';
 import { checkFormProps } from './Form.lib';
 
 
-const Form = ({formfields, type}) => {
+const Form = ({formfields, variant}) => {
 
     const [data, setData] = useState({});
 
@@ -32,7 +32,7 @@ const Form = ({formfields, type}) => {
 
     return (
         
-        <section className={`${styles.container} ${styles.type}`}>
+        <section className={`${styles.container} ${styles[variant]}`}>
 
             <ContextProvider>
                 
@@ -83,7 +83,7 @@ const Form = ({formfields, type}) => {
 
                 <div className={styles.submit}>
                     <Submit 
-                        type={type}
+                        variant={variant}
                         label={data.submit_label}
                     />
                 </div>

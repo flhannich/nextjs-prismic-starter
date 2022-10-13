@@ -1,15 +1,15 @@
+@import './styles/globals.scss';
+
 .container {
-    padding: var(--spacer-7) var(--padding--site);
     overflow: hidden;
+    padding: var(--spacer-7) var(--padding--site) 0 var(--padding--site);
     .top {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: var(--spacer-8);
-        .contact {
-            display: flex;
-            margin: 0 calc(var(--spacer-5) * -1);
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        gap: var(--spacer-6) var(--grid-gap);
+        padding-bottom: var(--spacer-7);
+        .contact, .social {
             ul {
-                margin: 0 var(--spacer-5);
                 li {
                     a {
                         display: inline-block;
@@ -19,25 +19,58 @@
                 }
             }
         }
-        .newsletter {
+        .contact {
+            grid-column: 1/13;
+            @media(min-width: $breakpiont-small) {
+                grid-column: 1/4;
+            }
+        }
+        .social {
 
         }
+        .newsletter {
+            grid-column: 1/13;
+            @media(min-width: $breakpiont-small) {
+                grid-column: 7/11;
+            }
+            max-width: 400px;
+        }
         .scrollTop {
-
+            grid-column: 1/13;
+            align-self: start;
+            justify-self: end;
+            @media(min-width: $breakpiont-small) {
+                grid-column: 11/13;
+            }
         }
     }
     .bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        gap: 0 var(--grid-gap);
+        padding: var(--spacer-3) 0;
+        border-top: 1px solid var(--border-color);
+        .copyright {
+            grid-column: 1/13;
+            @media(min-width: $breakpiont-small) {
+                grid-column: 1/3;
+            }
+            span {
+                font-size: var(--type-scale--min);
+                line-height: 32px;
+            }
+        }
         .legal {
-            max-width: 800px;
-            width: 100%;
+            grid-column: 1/11;
+            @media(min-width: $breakpiont-small) {
+                grid-column: 3/12;
+            }
             ul {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                margin: 0 calc(var(--spacer-3) * -1);
                 li {
+                    margin: 0 var(--spacer-3);
                     a, span {
                         display: inline-block;
                         line-height: 32px;
@@ -47,7 +80,11 @@
             }
         }
         .languageSwitcher {
-    
+            grid-column: 11/13;
+            @media(min-width: $breakpiont-small) {
+                grid-column: 12/13;
+                justify-self: end;
+            }
         }
     }
 }

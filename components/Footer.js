@@ -3,12 +3,9 @@ import { linkResolver } from 'prismicio'
 import { LanguageSwitcher, SocialLinks } from '@components/index';
 import styles from './Footer.module.scss';
 import { Subscribe, Button } from '@components/index'
-import { useContext } from 'react';
-import { AppContext } from 'context/AppContext';
 
-const Footer = ({ menu, config,altLangs, lang, subscribe_form}) => {
+const Footer = ({ menu, config, altLangs, lang, subscribe_form}) => {
 
-    const { configRef } = useContext(AppContext);
 
     const scrollToTop = () => {
         window.scrollTo({top: 0, behavior: 'smooth'});
@@ -20,25 +17,28 @@ const Footer = ({ menu, config,altLangs, lang, subscribe_form}) => {
 
             <div className={styles.top}>
 
-                {config && 
-                    <nav className={styles.contact}>
-                        <ul>
-                            <li>
-                                <a href={`tel:+49 ${config.data.phone.substring(1)}`}>{config.data.phone}</a>
+                <nav className={styles.contact}>
+                    <ul>
+                        <li>
+                            <a href={`tel:+49 ${config.data.phone.substring(1)}`}>{config.data.phone}</a>
+                        </li>
+                        <li>
+                            <a href={`mailto:${config.data.mail}`}>{config.data.mail}</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+
+                <div className={styles.social}>
+                    <ul>
+                        {config.data?.social.map((item, index) => (
+                            <li key={index}>
+                                <a href={item.link.url} rel="noreferrer nofollow">{item.provider}</a>
                             </li>
-                            <li>
-                                <a href={`mailto:${config.data.mail}`}>{config.data.mail}</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            {config.data?.social.map((item, index) => (
-                                <li key={index}>
-                                    <a href={item.link.url} rel="noreferrer nofollow">{item.provider}</a>
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
-                }
+                        ))}
+                    </ul>
+                </div>
+
 
                 <div className={styles.newsletter}>
                     <Subscribe data={subscribe_form} />
@@ -48,7 +48,7 @@ const Footer = ({ menu, config,altLangs, lang, subscribe_form}) => {
                     <Button
                         handler={() => scrollToTop()}
                         label={null}
-                        style="none"
+                        classname="icon"
                         icon={`scroll_top`}
                     />
                 </div>
@@ -59,11 +59,12 @@ const Footer = ({ menu, config,altLangs, lang, subscribe_form}) => {
 
              <div className={styles.bottom}>
 
+                <div className={styles.copyright}>
+                    <span>&copy; 2022 {config.data.sitename}</span>
+                </div>
+
                 <nav className={styles.legal}>
                     <ul>
-                        <li>
-                            {config && <span>&copy; 2022 {config.data.sitename}</span>}
-                        </li>
                         {menu.data.legal.map((item, index) => (
                             <li key={index}>
                                 <NextLink

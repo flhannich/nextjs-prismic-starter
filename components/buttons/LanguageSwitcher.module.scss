@@ -8,6 +8,7 @@
     }
     .list {
         width: 200px;
+        padding: var(--spacer-2) var(--spacer-2);
         a:link {
             display: flex;
             align-items: center;
@@ -15,6 +16,7 @@
             line-height: 32px;
             border-radius: var(--border-radius);
             padding: 0 var(--spacer-2);
+            font-size: var(--type-scale-0);
             &.isSelected {
                 background-color: var(--background-color--highlight);
             }
